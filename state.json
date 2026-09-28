@@ -1,0 +1,12 @@
+{
+  "processed": [
+    {
+      "pr": 20648,
+      "title": "Add regression test: #2650, class-local function tooltip argument names",
+      "category": "C-healthy",
+      "last_head_sha": "1964aed8f372dec4239a4317a2d2730581bf7ec5",
+      "last_processed": "2026-09-28T13:04:48Z",
+      "note": "All 53 checks passing, no human review feedback, awaiting reviewer approval. No action."
+    }
+  ]
+}
