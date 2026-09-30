@@ -103,7 +103,7 @@ WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and
   </PropertyGroup>
 
   <PropertyGroup>
-    <ValueTupleImplicitPackageVersion>4.6.2</ValueTupleImplicitPackageVersion>
+    <ValueTupleImplicitPackageVersion Condition="'$(ValueTupleImplicitPackageVersion)' == ''">4.6.2</ValueTupleImplicitPackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
