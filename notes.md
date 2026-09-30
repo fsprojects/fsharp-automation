@@ -27,5 +27,8 @@ Verified against HEAD `199945ab34433a3ec257e35e1fd30577a89ae350` (2026-08-28):
 
 **Nothing left to verify on #4.** Only comment again if a human replies. Otherwise call noop.
 
+## Run log (short)
+- 2026-09-30 01:18 UTC: rescanned. No human reply on #4, no new issues, no AI-labelled issues, no PRs. Called noop; monthly summary #2 left unchanged (nothing done this run).
+
 ## Standing conclusion
 Absent new issues or a scope change, future runs should expect to call `noop`.
