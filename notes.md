@@ -11,24 +11,31 @@ No `AI-thinks-issue-fixed` or `AI-thinks-windows-only` labels exist in the repo,
 labels are not in the repo's label list. Tasks 1–3 therefore have nothing to process.
 Cursors `c`, `woc`, `rtc` stay at 0 for this reason — they are not stale.
 
-## Issue #4 — ALL FIVE FINDINGS NOW VERIFIED. DO NOT RE-COMMENT.
+## Issue #4 — ALL FIVE FINDINGS VERIFIED. DO NOT RE-COMMENT.
 Verified against HEAD `199945ab34433a3ec257e35e1fd30577a89ae350` (2026-08-28):
-- DONE 2026-09-29 01:15: `_FSCorePackageVersionSet` dead write (ShimHelpers.props:37) — CONFIRMED
-- DONE 2026-09-29 01:15: missing `@(FileWrites)` in `GenerateFSharpILLinkSubstitutions` — CONFIRMED
-- DONE 2026-09-29 12:54: `CoreCompileDependsOn` overwrite (Microsoft.FSharp.Targets:224) — CONFIRMED
-  with repro: `dotnet msbuild -getProperty:CoreCompileDependsOn` on .fsproj drops a
-  Directory.Build.props contribution; .csproj keeps it. Nuance: VB overwrites too, only C#
-  preserves. So it's a doc gap, not a clear bug.
-- DONE 2026-09-29 12:54: unguarded shim imports — CONFIRMED, plus two extras: the `== ''`
-  fallback imports are unreachable (ShimHelpers.props:29 always sets FSharpCompilerPath to
-  the same dir), and the imports mix `/` and `\` separators.
-- DONE 2026-09-29 01:15: `CreateManifestResourceNamesDependsOn` blanking (line 123) — noted as
-  intentional C#/VB parity.
+- `_FSCorePackageVersionSet` dead write (ShimHelpers.props:37) — CONFIRMED
+- missing `@(FileWrites)` in `GenerateFSharpILLinkSubstitutions` — CONFIRMED (also no Inputs/Outputs)
+- `CoreCompileDependsOn` overwrite (Microsoft.FSharp.Targets:224) — CONFIRMED with repro.
+  VB overwrites too; only C# preserves. Doc gap, not a clear bug.
+- unguarded shim imports — CONFIRMED, plus `== ''` fallback imports unreachable, and
+  imports mix `/` and `\` separators.
+- `CreateManifestResourceNamesDependsOn` blanking (line 123) — intentional C#/VB parity.
 
-**Nothing left to verify on #4.** Only comment again if a human replies. Otherwise call noop.
+**Nothing left to verify on #4.** Only comment again if a human replies.
+
+## PR #6 — REVIEWED 2026-09-30 12:56. DO NOT RE-COMMENT.
+Draft PR from msbuild-quality workflow: guards `ValueTupleImplicitPackageVersion`
+(Microsoft.FSharp.NetSdk.props:106, unconditional assignment).
+Verified: `Directory.Build.props` value IS discarded (-> 4.6.2), but a **project-body**
+assignment DOES survive (-> 7.7.7), because `Sdk="..."` imports SDK props at the top.
+So the PR body's "no way to pin" sentence is overstated. Commented with the repro.
+Only re-engage if a human replies or the PR body changes.
 
 ## Run log (short)
-- 2026-09-30 01:18 UTC: rescanned. No human reply on #4, no new issues, no AI-labelled issues, no PRs. Called noop; monthly summary #2 left unchanged (nothing done this run).
+- 2026-09-30 01:18 UTC: rescanned, nothing new. noop.
+- 2026-09-30 12:56 UTC: commented on PR #6 with verification repro; updated summary #2.
 
 ## Standing conclusion
-Absent new issues or a scope change, future runs should expect to call `noop`.
+Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
+Before noop-ing, always check for NEW PRs (not just issues) — PR #6 was missed on the
+prior run because only issues were listed.
