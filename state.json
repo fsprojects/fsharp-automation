@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-30T05:00:00Z",
+  "last_run": "2026-09-30T08:59:42Z",
   "processed_prs": [
     {
       "number": 20648,
@@ -13,7 +13,8 @@
       "last_addressed_feedback_at": null,
       "last_shepherd_commit": "1964aed8f372dec4239a4317a2d2730581bf7ec5",
       "pr_updated_at": "2026-09-28T05:37:57Z",
-      "note": "mergeable_state=blocked = awaiting required maintainer approval, not a merge conflict. No action taken."
+      "note": "mergeable_state=blocked = awaiting required maintainer approval, not a merge conflict. No action taken.",
+      "last_run_id": 36693067254
     },
     {
       "number": 20663,
@@ -27,7 +28,8 @@
       "last_addressed_feedback_at": null,
       "last_shepherd_commit": null,
       "pr_updated_at": "2026-09-30T01:47:52Z",
-      "note": "Newly opened by Repo Assist. mergeable_state=blocked = awaiting required maintainer approval. No action taken."
+      "note": "Newly opened by Repo Assist. mergeable_state=blocked = awaiting required maintainer approval. No action taken.",
+      "last_run_id": 36693067254
     }
   ]
 }
