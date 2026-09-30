@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-30T16:58:40Z",
+  "last_run": "2026-09-30T21:00:00Z",
   "processed_prs": [
     {
       "number": 20648,
@@ -13,23 +13,19 @@
       "last_addressed_feedback_at": null,
       "last_shepherd_commit": "1964aed8f372dec4239a4317a2d2730581bf7ec5",
       "pr_updated_at": "2026-09-28T05:37:57Z",
-      "note": "mergeable_state=blocked = awaiting required maintainer approval, not a merge conflict. Re-verified 2026-09-30T16:58Z: 53/53 checks success, 0 review threads, no new activity. No action taken.",
-      "last_run_id": 36747934719
+      "note": "mergeable_state=blocked = awaiting required maintainer approval, not a merge conflict. Re-verified 2026-09-30T21:00Z: checks success, 0 review threads, no new activity. No action taken.",
+      "last_run_id": 36776098533
     },
     {
       "number": 20663,
       "repo": "dotnet/fsharp",
       "title": "Add regression test: #5620, explicit SRTP constraints",
       "issue": 5620,
-      "category": "C-healthy",
-      "ci": "all checks success (53/53, build 1617244)",
-      "reviews": 0,
-      "review_comments": 0,
-      "last_addressed_feedback_at": null,
-      "last_shepherd_commit": null,
-      "pr_updated_at": "2026-09-30T01:47:52Z",
-      "note": "Newly opened by Repo Assist. mergeable_state=blocked = awaiting required maintainer approval. Re-verified 2026-09-30T16:58Z: 53/53 checks success, 0 review threads, no new activity. No action taken.",
-      "last_run_id": 36747934719
+      "category": "merged",
+      "merged_at": "2026-09-30T19:57:03Z",
+      "merged_by": "T-Gro",
+      "note": "Merged. No further shepherding needed.",
+      "last_run_id": 36776098533
     }
   ]
 }
