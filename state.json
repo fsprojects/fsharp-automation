@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-29T16:58:47Z",
+  "last_run": "2026-09-30T01:23:00Z",
   "processed_prs": [
     {
       "number": 20648,
@@ -7,11 +7,12 @@
       "title": "Add regression test: #2650, class-local function tooltip argument names",
       "issue": 2650,
       "category": "C-healthy",
-      "ci": "all checks success",
+      "ci": "all checks success (53/53, build 1614286)",
       "reviews": 0,
       "review_comments": 0,
       "last_addressed_feedback_at": null,
       "last_shepherd_commit": "1964aed8f372dec4239a4317a2d2730581bf7ec5",
+      "pr_updated_at": "2026-09-28T05:37:57Z",
       "note": "mergeable_state=blocked = awaiting required maintainer approval, not a merge conflict. No action taken."
     }
   ]
