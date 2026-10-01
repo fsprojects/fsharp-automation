@@ -3,8 +3,8 @@
 ## Repository shape
 This repo is a fork/mirror of the F# compiler source. It has **no human-filed bug issues**.
 All open issues are automation-generated:
-- #1, #2 — Repo Assist monthly activity summaries (#1 is 2026-08, #2 is 2026-09; both
-  superseded — a 2026-10 summary was created on 2026-10-01 and is the live one)
+- #1, #2, #7 — Repo Assist monthly activity summaries. **#7 is the live 2026-10 one**
+  (`ms` = 7). #1 (2026-08) and #2 (2026-09) are superseded; a maintainer should close them.
 - #3, #5 — `[aw] Detection Runs` trackers (do not touch)
 - #4 — MSBuild File Quality Report (real, actionable findings)
 
@@ -36,8 +36,11 @@ Only re-engage if a human replies or the PR body changes.
 - 2026-09-30 01:18 UTC: rescanned, nothing new. noop.
 - 2026-09-30 12:56 UTC: commented on PR #6 with verification repro; updated summary #2.
 - 2026-10-01 01:25 UTC: month rollover. No new issues/PRs/human comments. Created the
-  2026-10 monthly summary, carrying forward the unactioned items from #2. Set `ms` to the
-  new issue number on the next run (the create_issue number is not visible to this run).
+  2026-10 monthly summary (= issue #7), carrying forward the unactioned items from #2.
+- 2026-10-01 12:55 UTC: resolved `ms` to 7. Re-listed all issues AND PRs: still only #1-#7
+  and PR #6, every one authored by github-actions[bot]. Zero human comments exist anywhere
+  in the repo. #4 and #6 unchanged since my last comments on them. Nothing to do -> noop,
+  and per the workflow rules the monthly summary was NOT updated (no activity this run).
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
