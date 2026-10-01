@@ -12,3 +12,4 @@
 {"run_id":36747934719,"ts":"2026-09-30T16:58:40Z","prs":[{"n":20663,"cat":"C-healthy"},{"n":20648,"cat":"C-healthy"}],"action":"none"}
 {"run":36776098533,"ts":"2026-09-30T21:00:00Z","eligible":[20648],"actions":"none - 20648 healthy (Category C); 20663 merged by T-Gro"}
 {"run":36801286013,"ts":"2026-10-01T01:30:00Z","eligible":[20648],"category":"C-healthy","action":"noop","note":"Unchanged since 2026-09-28T05:37:57Z. CI build 1614286 green, 0 review threads, not draft, head repo dotnet/fsharp. Blocked only on required maintainer approval (T-Gro/abonie)."}
+{"run":36817573161,"ts":"2026-10-01T05:00:00Z","eligible":[20671,20648],"category":"C-healthy","action":"noop","note":"20671 new (issue 5973), CI build 1619004 green, 0 reviews. 20648 unchanged since 2026-09-28. Both blocked only on required maintainer approval."}
