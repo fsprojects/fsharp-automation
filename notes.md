@@ -3,7 +3,8 @@
 ## Repository shape
 This repo is a fork/mirror of the F# compiler source. It has **no human-filed bug issues**.
 All open issues are automation-generated:
-- #1, #2 — Repo Assist monthly activity summaries (#2 is 2026-09)
+- #1, #2 — Repo Assist monthly activity summaries (#1 is 2026-08, #2 is 2026-09; both
+  superseded — a 2026-10 summary was created on 2026-10-01 and is the live one)
 - #3, #5 — `[aw] Detection Runs` trackers (do not touch)
 - #4 — MSBuild File Quality Report (real, actionable findings)
 
@@ -34,6 +35,9 @@ Only re-engage if a human replies or the PR body changes.
 ## Run log (short)
 - 2026-09-30 01:18 UTC: rescanned, nothing new. noop.
 - 2026-09-30 12:56 UTC: commented on PR #6 with verification repro; updated summary #2.
+- 2026-10-01 01:25 UTC: month rollover. No new issues/PRs/human comments. Created the
+  2026-10 monthly summary, carrying forward the unactioned items from #2. Set `ms` to the
+  new issue number on the next run (the create_issue number is not visible to this run).
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
