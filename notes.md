@@ -41,8 +41,21 @@ Only re-engage if a human replies or the PR body changes.
   and PR #6, every one authored by github-actions[bot]. Zero human comments exist anywhere
   in the repo. #4 and #6 unchanged since my last comments on them. Nothing to do -> noop,
   and per the workflow rules the monthly summary was NOT updated (no activity this run).
+- 2026-10-02 01:15 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6). Every item
+  still authored by github-actions[bot]; re-read #4 and #7 comment threads in full — zero
+  human comments exist anywhere in the repo. #4 unchanged since 2026-09-29, PR #6 unchanged
+  since 2026-09-30. #5 ([aw] Detection Runs) ticks every run; do not touch. Nothing to do
+  -> noop, and the monthly summary #7 was NOT updated (no activity this run).
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
 Before noop-ing, always check for NEW PRs (not just issues) — PR #6 was missed on the
 prior run because only issues were listed.
+
+## Why no PR is opened for the verified #4 findings
+The `safe-outputs.create-pull-request` config for this workflow force-prefixes titles with
+"Add regression test: " and force-adds `NO_RELEASE_NOTES` + `AI-Issue-Regression-PR`. That
+shape only fits Task 2 regression-test PRs. Opening the one-line `@(FileWrites)` fix for
+`GenerateFSharpILLinkSubstitutions` through it would ship a mislabelled, misleadingly-titled
+PR touching `src/`. Leave it to a human (it is already listed in summary #7).
+
