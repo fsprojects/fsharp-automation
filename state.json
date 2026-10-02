@@ -1,63 +1,7 @@
 {
-  "last_run": "2026-10-02T05:00:00Z",
-  "processed_prs": [
-    {
-      "number": 20648,
-      "repo": "dotnet/fsharp",
-      "title": "Add regression test: #2650, class-local function tooltip argument names",
-      "issue": 2650,
-      "category": "C-healthy",
-      "ci": "all checks success (53/53, build 1614286)",
-      "reviews": 0,
-      "review_comments": 0,
-      "last_addressed_feedback_at": null,
-      "last_shepherd_commit": "1964aed8f372dec4239a4317a2d2730581bf7ec5",
-      "pr_updated_at": "2026-09-28T05:37:57Z",
-      "note": "mergeable_state=blocked = awaiting required maintainer approval, not a merge conflict. Re-verified 2026-10-02T05:00Z: CI green, 0 review threads, no new activity.",
-      "last_run_id": 36966815526
-    },
-    {
-      "number": 20663,
-      "repo": "dotnet/fsharp",
-      "title": "Add regression test: #5620, explicit SRTP constraints",
-      "issue": 5620,
-      "category": "merged",
-      "merged_at": "2026-09-30T19:57:03Z",
-      "merged_by": "T-Gro",
-      "note": "Merged. No further shepherding needed.",
-      "last_run_id": 36776098533
-    },
-    {
-      "number": 20671,
-      "repo": "dotnet/fsharp",
-      "title": "Add regression test: #5973, reject unresolved SRTP chains without an ICE",
-      "issue": 5973,
-      "category": "C-healthy",
-      "ci": "all checks success (build 1619004)",
-      "reviews": 0,
-      "review_comments": 0,
-      "last_addressed_feedback_at": null,
-      "last_shepherd_commit": null,
-      "head_sha": "e11f43fc0aaa4d44d7a14bbeddfeca3a1a48e51f",
-      "pr_updated_at": "2026-10-01T01:46:58Z",
-      "note": "Opened by Repo Assist 2026-10-01. Healthy; awaiting required maintainer approval. No action taken. Re-verified 2026-10-02T05:00Z: CI green, 0 review threads, no new activity.",
-      "last_run_id": 36966815526
-    },
-    {
-      "number": 20690,
-      "repo": "dotnet/fsharp",
-      "title": "Add regression test: #6310, preserve C# XML doc IDs for out parameters",
-      "issue": 6310,
-      "category": "C-healthy",
-      "ci": "all checks success (53/53, build 1620622)",
-      "reviews": 0,
-      "review_comments": 0,
-      "last_addressed_feedback_at": null,
-      "last_shepherd_commit": null,
-      "head_sha": "d5f9f4be6a7ea0c995d4fd99c97b6ef98c92117f",
-      "pr_updated_at": "2026-10-02T01:36:22Z",
-      "note": "Opened by Repo Assist 2026-10-02. Healthy; awaiting required maintainer approval. No action taken.",
-      "last_run_id": 36966815526
-    }
+  "last_run": "2026-10-02T08:59:22Z",
+  "processed": [
+    {"pr": 20671, "issue": 5973, "category": "C", "ci": "all success", "review_comments": 0, "head_sha": "e11f43fc0aaa4d44d7a14bbeddfeca3a1a48e51f", "action": "none - healthy, awaiting maintainer review"},
+    {"pr": 20648, "issue": 2650, "category": "C", "ci": "all success", "review_comments": 0, "head_sha": "1964aed8f372dec4239a4317a2d2730581bf7ec5", "action": "none - healthy, awaiting maintainer review"}
   ]
 }
