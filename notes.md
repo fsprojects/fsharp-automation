@@ -50,6 +50,11 @@ Only re-engage if a human replies or the PR body changes.
   issues, no new PRs, zero human comments anywhere. #4 last touched 2026-09-29, PR #6
   2026-09-30, #7 2026-10-01 — all unchanged since my previous comments. Nothing to do
   -> noop; monthly summary #7 NOT updated (no activity this run).
+- 2026-10-03 01:12 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
+  No new issues, no new PRs, zero human comments anywhere in the repo. Last-updated stamps:
+  #4 2026-09-29, PR #6 2026-09-30, #7 2026-10-01 — all predate `lr`, so nothing changed since
+  my previous engagement. Only #5 ([aw] Detection Runs) ticked, which is machine noise — do not
+  touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity this run).
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
