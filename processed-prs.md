@@ -8,3 +8,5 @@
 | dotnet/fsharp#20671 | #5973 | 2026-10-04T10:48Z | C (healthy) | CI green (build 1619004, 53/53). Zero review threads. No new activity since 2026-10-01T01:46Z. |
 
 Both open PRs are healthy and awaiting maintainer review (abonie, T-Gro). No action taken in run 37196476095.
+
+**Run 37222643065 (2026-10-04T18:01Z)**: Aborted — GitHub MCP server trapped (`module closed with context deadline exceeded`) on every call; `gh` unauthenticated. No PRs could be listed or triaged. Retry on next scheduled run.
