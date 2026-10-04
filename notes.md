@@ -68,6 +68,13 @@ Only re-engage if a human replies or the PR body changes.
   ([aw] Detection Runs, 2026-10-04 01:38) ticked — machine noise, do not touch. Nothing to do
   -> noop; monthly summary #7 NOT updated (no activity this run).
 
+- 2026-10-04 14:25 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
+  No new issues, no new PRs. Re-read #4 (2 comments, both mine, last 2026-09-29) and #7
+  (zero comments) in full — still zero human comments anywhere in the repo. Also re-listed
+  repo labels: `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still do not exist, so
+  Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-04 14:17) ticked — machine
+  noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity).
+
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
 Before noop-ing, always check for NEW PRs (not just issues) — PR #6 was missed on the
