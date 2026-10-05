@@ -10,3 +10,5 @@
 Both open PRs are healthy and awaiting maintainer review (abonie, T-Gro). No action taken in run 37267133639.
 
 **Run 37222643065 (2026-10-04T18:01Z)**: Aborted — GitHub MCP server trapped (`module closed with context deadline exceeded`) on every call; `gh` unauthenticated. No PRs could be listed or triaged. Retry on next scheduled run.
+
+**Run 37314159527 (2026-10-05T13:07Z)**: `search_pull_requests` for `repo:dotnet/fsharp is:open label:AI-Issue-Regression-PR` returned 0 results — consistent with run 37287678206 (09:06Z). #20648 and #20671 appear to have been merged/closed since 05:19Z. GitHub MCP server trapped (`module closed with context deadline exceeded`) on all subsequent calls, so no re-verification was possible. No action taken.
