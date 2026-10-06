@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-10-06T09:00Z",
+  "last_run": "37499824355",
   "processed_prs": [
     {
       "repo": "dotnet/fsharp",
@@ -17,5 +17,8 @@
     }
   ],
   "last_run_id": "37439764655",
-  "open_prs": []
+  "open_prs": [
+    20706
+  ],
+  "last_run_utc": "2026-10-06T17:00Z"
 }

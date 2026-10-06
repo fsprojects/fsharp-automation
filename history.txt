@@ -2,3 +2,4 @@
 2026-10-05T13:07:00Z run=37314159527 open AI-Issue-Regression-PR PRs: 0 (dotnet/fsharp) - no action; GitHub MCP trapped after first query, no re-verification possible
 2026-10-06T01:20Z run=37398545408 open_regression_prs=0 (20648,20671 merged 2026-10-05) action=noop
 2026-10-06T09:00Z run=37439764655 open_regression_prs=0 (dotnet/fsharp, fsprojects/fsharp-automation) action=noop
+2026-10-06T17:00Z run=37499824355 prs=1 processed=20706 action=comment-only (AzDo logs blocked)
