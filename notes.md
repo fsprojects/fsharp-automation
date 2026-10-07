@@ -33,10 +33,6 @@ So the PR body's "no way to pin" sentence is overstated. Commented with the repr
 Only re-engage if a human replies or the PR body changes.
 
 ## Run log (short)
-- 2026-09-30 01:18 UTC: rescanned, nothing new. noop.
-- 2026-09-30 12:56 UTC: commented on PR #6 with verification repro; updated summary #2.
-- 2026-10-01 01:25 UTC: month rollover. No new issues/PRs/human comments. Created the
-  2026-10 monthly summary (= issue #7), carrying forward the unactioned items from #2.
 - 2026-10-01 12:55 UTC: resolved `ms` to 7. Re-listed all issues AND PRs: still only #1-#7
   and PR #6, every one authored by github-actions[bot]. Zero human comments exist anywhere
   in the repo. #4 and #6 unchanged since my last comments on them. Nothing to do -> noop,
@@ -101,6 +97,14 @@ Only re-engage if a human replies or the PR body changes.
   Repo labels re-listed: `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent, so
   Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-06 12:45) ticked — machine
   noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity).
+
+- 2026-10-07 01:18 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
+  No new issues, no new PRs. Re-read #4 (2 comments, both mine, last 2026-09-29), #7 (zero
+  comments) and PR #6 (1 comment, mine, 2026-09-30) in full — still zero human comments
+  anywhere in the repo. Repo labels re-listed: `AI-thinks-issue-fixed` /
+  `AI-thinks-windows-only` still absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection
+  Runs, 2026-10-07 01:12) ticked — machine noise, do not touch. Nothing to do -> noop;
+  monthly summary #7 NOT updated (no activity this run).
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
