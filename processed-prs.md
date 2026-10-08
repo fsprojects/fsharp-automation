@@ -1,12 +1,17 @@
 # Regression PR Shepherd — processed PRs
 
 ## dotnet/fsharp#20706 — "Add regression test: #6036, FCS namespace-module collision diagnostic"
-- Last checked: 2026-10-07T21:00Z (head 5870e60)
-- Status: **healthy (Category C)**. All 55 check runs on head commit succeeded, including
-  `Build WindowsCompressedMetadata transparent_compiler_release`.
-- History: an earlier shepherd run (2026-10-06, comment 6025799805) reported the test failing
-  under the transparent compiler and proposed closing. A follow-up commit fixed the test and CI
-  is now fully green, so that comment is stale — no further action taken.
-- `mergeable_state: blocked` is only "awaiting required review" (reviewers: @abonie, @T-Gro),
-  not a merge conflict.
-- No review threads / no human review comments as of this run. No comment posted.
+- Last processed: 2026-10-08
+- Head sha seen: 5870e60c5512025affb8191503ff9d0f71343bd6
+- Status: Category C (healthy). All 55 checks green, including
+  `WindowsCompressedMetadata transparent_compiler_release` which previously failed.
+- History: an earlier run (2026-10-06) posted a B3 comment claiming the bug still
+  reproduced under the transparent compiler. That was subsequently addressed by a
+  commit on the PR branch fixing `src/Compiler/Service/TransparentCompiler.fs`
+  (capture project-finalization diagnostics) plus a release note. The PR therefore
+  now contains a real product fix, not only test files — do NOT attempt to rebase,
+  trim, or otherwise modify it. mergeable_state=blocked simply means it awaits
+  maintainer review (abonie, T-Gro are requested reviewers).
+- No review comments / review threads exist yet. Nothing to address.
+- Next run: only act if new human review feedback or a CI failure appears after
+  sha 5870e60.
