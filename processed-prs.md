@@ -1,7 +1,7 @@
 # Regression PR Shepherd — processed PRs
 
 ## dotnet/fsharp#20706 — "Add regression test: #6036, FCS namespace-module collision diagnostic"
-- Last processed: 2026-10-08
+- Last processed: 2026-10-08 (re-verified, no change)
 - Head sha seen: 5870e60c5512025affb8191503ff9d0f71343bd6
 - Status: Category C (healthy). All 55 checks green, including
   `WindowsCompressedMetadata transparent_compiler_release` which previously failed.
