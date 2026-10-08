@@ -33,15 +33,6 @@ So the PR body's "no way to pin" sentence is overstated. Commented with the repr
 Only re-engage if a human replies or the PR body changes.
 
 ## Run log (short)
-- 2026-10-01 12:55 UTC: resolved `ms` to 7. Re-listed all issues AND PRs: still only #1-#7
-  and PR #6, every one authored by github-actions[bot]. Zero human comments exist anywhere
-  in the repo. #4 and #6 unchanged since my last comments on them. Nothing to do -> noop,
-  and per the workflow rules the monthly summary was NOT updated (no activity this run).
-- 2026-10-02 01:15 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6). Every item
-  still authored by github-actions[bot]; re-read #4 and #7 comment threads in full — zero
-  human comments exist anywhere in the repo. #4 unchanged since 2026-09-29, PR #6 unchanged
-  since 2026-09-30. #5 ([aw] Detection Runs) ticks every run; do not touch. Nothing to do
-  -> noop, and the monthly summary #7 was NOT updated (no activity this run).
 - 2026-10-02 12:53 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6). No new
   issues, no new PRs, zero human comments anywhere. #4 last touched 2026-09-29, PR #6
   2026-09-30, #7 2026-10-01 — all unchanged since my previous comments. Nothing to do
@@ -111,6 +102,13 @@ Only re-engage if a human replies or the PR body changes.
   2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
   Repo labels re-listed (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still
   absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-07 12:47) ticked —
+  machine noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated.
+
+- 2026-10-08 01:18 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
+  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
+  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
+  Repo labels re-listed (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still
+  absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-08 01:12) ticked —
   machine noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated.
 
 ## Standing conclusion
