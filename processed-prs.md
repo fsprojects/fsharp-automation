@@ -13,5 +13,4 @@
   trim, or otherwise modify it. mergeable_state is now `clean`; it simply awaits
   maintainer review (abonie, T-Gro are requested reviewers).
 - Approved by abonie 2026-10-08T14:19:55Z on sha 5870e60. No review comments / threads. Nothing to address.
-- Next run: only act if new human review feedback or a CI failure appears after
-  sha 5870e60.
+- **MERGED** by T-Gro 2026-10-09T07:34:52Z. Closed; no further action needed.

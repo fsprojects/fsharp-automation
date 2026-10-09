@@ -1,10 +1,8 @@
 {
-  "last_run": "37730114759",
-  "last_run_id": "37730114759",
-  "last_run_utc": "2026-10-08T05:00Z",
-  "open_prs": [
-    20706
-  ],
+  "last_run": "37908557886",
+  "last_run_id": "37908557886",
+  "last_run_utc": "2026-10-09T09:02Z",
+  "open_prs": [],
   "processed_prs": [
     {
       "repo": "dotnet/fsharp",
@@ -24,8 +22,8 @@
       "repo": "dotnet/fsharp",
       "number": 20706,
       "issue": 6036,
-      "category": "C-healthy-after-forward-fix",
-      "note": "Fixed forward by commit 5870e60 (Copilot, 2026-10-07) which patches src/Compiler/Service/TransparentCompiler.fs ComputeProjectExtras to install a CompilationDiagnosticLogger and fold results into tcDiagnosticsRev, plus a release note. Full fsharp-ci now GREEN incl. transparent_compiler_release. Earlier B3 'still reproduces / closing' comment is STALE; corrected via comment on 2026-10-08. PR is no longer tests-only - do not push test-scope-only changes to it. mergeable_state=blocked awaiting review from T-Gro/abonie. AI-thinks-issue-fixed stays removed from #6036; issue closes when PR merges.",
+      "category": "Merged",
+      "note": "MERGED by T-Gro 2026-10-09T07:34:52Z (sha 5870e60). Included forward-fix to src/Compiler/Service/TransparentCompiler.fs. Issue #6036 resolved. No further action.",
       "head_sha": "5870e60c5512025affb8191503ff9d0f71343bd6",
       "last_addressed_comment_utc": "2026-10-08T05:00:00Z"
     }
