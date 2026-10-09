@@ -33,97 +33,13 @@ So the PR body's "no way to pin" sentence is overstated. Commented with the repr
 Only re-engage if a human replies or the PR body changes.
 
 ## Run log (short)
-- 2026-10-02 12:53 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6). No new
-  issues, no new PRs, zero human comments anywhere. #4 last touched 2026-09-29, PR #6
-  2026-09-30, #7 2026-10-01 — all unchanged since my previous comments. Nothing to do
-  -> noop; monthly summary #7 NOT updated (no activity this run).
-- 2026-10-03 01:12 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs, zero human comments anywhere in the repo. Last-updated stamps:
-  #4 2026-09-29, PR #6 2026-09-30, #7 2026-10-01 — all predate `lr`, so nothing changed since
-  my previous engagement. Only #5 ([aw] Detection Runs) ticked, which is machine noise — do not
-  touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity this run).
-
-- 2026-10-03 14:17 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs, zero human comments anywhere. Last-updated stamps: #4 2026-09-29,
-  PR #6 2026-09-30, #7 2026-10-01 — all predate this run and my previous engagement. Only #5
-  ([aw] Detection Runs, 2026-10-03 12:46) ticked — machine noise, do not touch. Nothing to do
-  -> noop; monthly summary #7 NOT updated (no activity this run).
-
-- 2026-10-04 01:42 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs, zero human comments anywhere. Last-updated stamps: #4 2026-09-29,
-  PR #6 2026-09-30, #7 2026-10-01 — all unchanged since my previous engagement. Only #5
-  ([aw] Detection Runs, 2026-10-04 01:38) ticked — machine noise, do not touch. Nothing to do
-  -> noop; monthly summary #7 NOT updated (no activity this run).
-
-- 2026-10-04 14:25 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Re-read #4 (2 comments, both mine, last 2026-09-29) and #7
-  (zero comments) in full — still zero human comments anywhere in the repo. Also re-listed
-  repo labels: `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still do not exist, so
-  Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-04 14:17) ticked — machine
-  noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity).
-
-- 2026-10-05 01:20 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Repo labels re-listed: `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent, so
-  Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-05 01:15) ticked — machine
-  noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity).
-
-- 2026-10-05 12:55 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Only #5 ([aw] Detection Runs, 2026-10-05 12:48) ticked — machine noise, do not touch.
-  Nothing to do -> noop; monthly summary #7 NOT updated (no activity this run).
-
-- 2026-10-06 01:15 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Repo labels re-listed: `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent, so
-  Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-06 01:09) ticked — machine
-  noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity).
-
-- 2026-10-06 12:51 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Repo labels re-listed: `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent, so
-  Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-06 12:45) ticked — machine
-  noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated (no activity).
-
-- 2026-10-07 01:18 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Re-read #4 (2 comments, both mine, last 2026-09-29), #7 (zero
-  comments) and PR #6 (1 comment, mine, 2026-09-30) in full — still zero human comments
-  anywhere in the repo. Repo labels re-listed: `AI-thinks-issue-fixed` /
-  `AI-thinks-windows-only` still absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection
-  Runs, 2026-10-07 01:12) ticked — machine noise, do not touch. Nothing to do -> noop;
-  monthly summary #7 NOT updated (no activity this run).
-
-- 2026-10-07 12:55 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Repo labels re-listed (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still
-  absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-07 12:47) ticked —
-  machine noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated.
-
-- 2026-10-08 01:18 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Repo labels re-listed (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still
-  absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-08 01:12) ticked —
-  machine noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated.
-
-- 2026-10-08 12:55 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Repo labels re-listed (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still
-  absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-08 12:47) ticked —
-  machine noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated.
-
-- 2026-10-09 01:20 UTC: re-listed all issues (#1-#5, #7) and all PRs (only #6, still draft).
-  No new issues, no new PRs. Last-updated stamps: #4 2026-09-29, PR #6 2026-09-30, #7
-  2026-10-01 — all unchanged since my previous engagement; zero human comments anywhere.
-  Repo labels re-listed (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still
-  absent, so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs, 2026-10-09 01:13) ticked —
-  machine noise, do not touch. Nothing to do -> noop; monthly summary #7 NOT updated.
+- 2026-10-02 .. 2026-10-09 (14 runs, twice daily): every run re-listed all issues (#1-#5, #7)
+  and all PRs (only #6, still draft). No new issues, no new PRs, zero human comments anywhere.
+  Stamps frozen at #4 2026-09-29, PR #6 2026-09-30, #7 2026-10-01. Repo labels re-listed
+  several times (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent,
+  so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs) ticks each run — machine noise,
+  do not touch. Every run -> noop; monthly summary #7 NOT updated (no activity).
+- 2026-10-09 12:52 UTC: same as above. noop.
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
