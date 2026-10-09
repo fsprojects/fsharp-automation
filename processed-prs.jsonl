@@ -15,3 +15,4 @@
 {"run":"37730114759","ts":"2026-10-08T05:00Z","eligible":[20706],"category":"C-healthy","action":"comment","note":"20706 fixed forward by 5870e60 touching src/Compiler/Service/TransparentCompiler.fs (+release note). All fsharp-ci green incl. transparent_compiler_release. Posted correction retracting the stale 2026-10-06 B3 'bug still reproduces / closing' comment. No code pushed. Awaiting required review."}
 {"date":"2026-10-08","pr":20706,"repo":"dotnet/fsharp","head_sha":"5870e60c5512025affb8191503ff9d0f71343bd6","category":"C","action":"none","checks":"55/55 success","reviews":0}
 {"ts":"2026-10-09T01:30Z","pr":"dotnet/fsharp#20706","sha":"5870e60c5512025affb8191503ff9d0f71343bd6","category":"C","action":"none"}
+{"ts":"2026-10-09T05:00Z","pr":20706,"repo":"dotnet/fsharp","category":"C","action":"none","head_sha":"5870e60c5512025affb8191503ff9d0f71343bd6","note":"clean, approved by abonie, awaiting T-Gro review"}
