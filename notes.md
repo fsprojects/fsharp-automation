@@ -33,27 +33,15 @@ So the PR body's "no way to pin" sentence is overstated. Commented with the repr
 Only re-engage if a human replies or the PR body changes.
 
 ## Run log (short)
-- 2026-10-02 .. 2026-10-09 (14 runs, twice daily): every run re-listed all issues (#1-#5, #7)
+- 2026-10-02 .. 2026-10-11 (18+ runs, twice daily): every run re-listed all issues (#1-#5, #7)
   and all PRs (only #6, still draft). No new issues, no new PRs, zero human comments anywhere.
-  Stamps frozen at #4 2026-09-29, PR #6 2026-09-30, #7 2026-10-01. Repo labels re-listed
-  several times (13 labels): `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent,
-  so Tasks 1-3 have no input. Only #5 ([aw] Detection Runs) ticks each run — machine noise,
-  do not touch. Every run -> noop; monthly summary #7 NOT updated (no activity).
-- 2026-10-09 12:52 UTC: same as above. noop.
-- 2026-10-10 01:18 UTC: verified issues (#1-#5,#7) and PRs (only #6, still draft,
-  last touched 2026-09-30) and the 13 repo labels. No new issues/PRs, zero human comments,
-  `AI-thinks-*` labels still absent. Only #5 ticked (2026-10-10 01:11, machine noise). noop.
-- 2026-10-10 12:49 UTC: issues (#1-#5,#7) and PRs (only #6, draft, updated 2026-09-30)
-  re-verified. No new issues/PRs, no human comments, `AI-thinks-*` labels still absent.
-  Only #5 ticked (2026-10-10 12:41, machine noise). noop; summary #7 not updated.
-- 2026-10-11 01:22 UTC: issues (#1-#5,#7) and PRs (only #6, draft, updated 2026-09-30)
-  re-verified. No new issues/PRs, no human comments, `AI-thinks-*` labels still absent
-  (13 labels unchanged). Only #5 ticked (2026-10-11 01:17, machine noise). noop;
-  summary #7 not updated.
-- 2026-10-11 12:50 UTC: issues (#1-#5,#7) and PRs (only #6, draft, updated 2026-09-30)
-  re-verified. `updated_at` stamps unchanged on #4 (2026-09-29), PR #6 (2026-09-30),
-  #7 (2026-10-01) => zero new human comments. 13 labels unchanged, `AI-thinks-*` absent.
-  Only #5 ticked (2026-10-11 12:43, machine noise). noop; summary #7 not updated.
+  Stamps frozen at #4 2026-09-29, PR #6 2026-09-30, #7 2026-10-01. 13 repo labels unchanged;
+  `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent, so Tasks 1-3 have no input.
+  Only #5 ([aw] Detection Runs) ticks each run — machine noise, do not touch.
+  Every run -> noop; monthly summary #7 NOT updated (no activity).
+- 2026-10-12 01:26 UTC: issues (#1-#5,#7), PRs (only #6, draft, updated 2026-09-30) and the
+  13 labels re-verified — all stamps unchanged vs. previous run. Only #5 ticked
+  (2026-10-12 01:19). noop; summary #7 not updated.
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
