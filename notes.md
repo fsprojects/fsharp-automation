@@ -32,6 +32,16 @@ assignment DOES survive (-> 7.7.7), because `Sdk="..."` imports SDK props at the
 So the PR body's "no way to pin" sentence is overstated. Commented with the repro.
 Only re-engage if a human replies or the PR body changes.
 
+## Issues #8 / PR #9 — HANDLED 2026-10-14 12:49. DO NOT RE-COMMENT.
+msbuild-quality workflow re-emitted the ValueTupleImplicitPackageVersion finding as "new":
+issue #8 + PR #9. PR #9 diff == PR #6 diff except whitespace in the Condition attribute.
+Commented on both: duplicate, plus corrected their evaluation-order rationale.
+Re-verified at HEAD 199945a (MSBuild 18.9.11 / SDK 10.0.401): evaluation is sequential over
+the flattened import tree, so a PROJECT-BODY assignment survives (7.7.7) while a
+Directory.Build.props one is discarded (4.6.2). "No way to pin" is overstated; the real bug
+is only the pre-import sources. SetImplicitReferenceTest.proj sets it in the body -> not failing.
+Only re-engage if a human replies.
+
 ## Run log (short)
 - 2026-10-02 .. 2026-10-11 (18+ runs, twice daily): every run re-listed all issues (#1-#5, #7)
   and all PRs (only #6, still draft). No new issues, no new PRs, zero human comments anywhere.
@@ -64,4 +74,7 @@ The `safe-outputs.create-pull-request` config for this workflow force-prefixes t
 shape only fits Task 2 regression-test PRs. Opening the one-line `@(FileWrites)` fix for
 `GenerateFSharpILLinkSubstitutions` through it would ship a mislabelled, misleadingly-titled
 PR touching `src/`. Leave it to a human (it is already listed in summary #7).
-
+- 2026-10-14 12:49 UTC: FIRST new activity in ~2 weeks. New issue #8 and new PR #9 (both
+  github-actions[bot], msbuild-quality, 2026-10-14 05:03/05:04) — duplicates of #4/#6.
+  Commented on #8 and #9; updated monthly summary #7 (first update since creation).
+  Still zero human comments anywhere. #1-#5 stamps unchanged.
