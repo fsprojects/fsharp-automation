@@ -74,6 +74,11 @@ The `safe-outputs.create-pull-request` config for this workflow force-prefixes t
 shape only fits Task 2 regression-test PRs. Opening the one-line `@(FileWrites)` fix for
 `GenerateFSharpILLinkSubstitutions` through it would ship a mislabelled, misleadingly-titled
 PR touching `src/`. Leave it to a human (it is already listed in summary #7).
+- 2026-10-15 01:06 UTC: re-verified issues (#1-#5,#7,#8) and PRs (#6 and #9, both open drafts).
+  Everything identical to the 2026-10-14 12:49 run: #4 2 comments (both mine, 2026-09-29),
+  #8 1 comment (mine, 2026-10-14 12:53), #7 still 0 comments, PR #9 upd 2026-10-14 12:53,
+  PR #6 upd 2026-09-30. 13 labels unchanged, no AI-thinks-* labels => Tasks 1-3 no input.
+  Zero human comments anywhere. noop; summary #7 not updated (no activity this run).
 - 2026-10-14 12:49 UTC: FIRST new activity in ~2 weeks. New issue #8 and new PR #9 (both
   github-actions[bot], msbuild-quality, 2026-10-14 05:03/05:04) — duplicates of #4/#6.
   Commented on #8 and #9; updated monthly summary #7 (first update since creation).
