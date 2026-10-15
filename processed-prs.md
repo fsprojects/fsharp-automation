@@ -5,5 +5,6 @@
   src/Compiler/Service/TransparentCompiler.fs. No further action.
 
 ## Recent runs
-- 2026-10-13 .. 2026-10-15: zero open PRs with label `AI-Issue-Regression-PR` in
+- 2026-10-13 .. 2026-10-15 (2 runs): zero open PRs with label `AI-Issue-Regression-PR` in
   dotnet/fsharp or fsprojects/fsharp-automation. noop each run.
+- 2026-10-15T08:59Z: checked dotnet/fsharp and fsprojects/fsharp-automation — 0 open PRs with label. noop.
