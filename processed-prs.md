@@ -11,3 +11,4 @@
 - 2026-10-15T13:02Z: checked dotnet/fsharp and fsprojects/fsharp-automation — 0 open PRs with label. noop.
 - 2026-10-16T08:59Z: checked dotnet/fsharp and fsprojects/fsharp-automation — 0 open PRs with label. noop.
 - 2026-10-16T16:58Z: 0 open PRs with label in dotnet/fsharp. noop.
+- 2026-10-17T16:57Z: dotnet/fsharp#20799 (#13084 long CEs) open, CI green, no reviews -> Category C. noop.
