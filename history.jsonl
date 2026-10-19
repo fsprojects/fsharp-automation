@@ -12,3 +12,4 @@
 {"run":"39068790221","utc":"2026-10-17T20:57Z","pr":20799,"category":"C","note":"CI green, no reviews"}
 {"pr":20799,"date":"2026-10-18","state":"healthy"}
 {"run":"2026-10-19T01:18Z","pr":20799,"issue":13084,"category":"C","note":"CI green, no reviews"}
+{"ts":"2026-10-19T05:00:00Z","prs":[{"n":20805,"cat":"C"},{"n":20799,"cat":"C"}]}
