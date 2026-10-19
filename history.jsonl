@@ -11,3 +11,4 @@
 {"run_id":"38833554159","date":"2026-10-16","eligible_prs":0,"action":"noop","note":"No open PRs with AI-Issue-Regression-PR label in dotnet/fsharp or fsprojects/fsharp-automation"}
 {"run":"39068790221","utc":"2026-10-17T20:57Z","pr":20799,"category":"C","note":"CI green, no reviews"}
 {"pr":20799,"date":"2026-10-18","state":"healthy"}
+{"run":"2026-10-19T01:18Z","pr":20799,"issue":13084,"category":"C","note":"CI green, no reviews"}
