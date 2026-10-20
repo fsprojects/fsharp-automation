@@ -20,3 +20,7 @@
   fsprojects/fsharp-automation and cannot push to a dotnet/fsharp branch.
   Did NOT re-comment (one-comment rule / duplicate-work rule). PR also carries
   `AI-Auto-Resolve-Conflicts`, so LabelOps owns the rebase. noop.
+- 2026-10-20T01:13Z: dotnet/fsharp#20799 — conflict RESOLVED (commit a18187e pushed by prior
+  run 39323589831). fsharp-ci green on a18187e, APPROVED by T-Gro 2026-10-19T14:35Z,
+  0 review threads, no new human feedback. mergeable_state=blocked (awaiting abonie review /
+  required checks gate) -> Category C healthy. noop.
