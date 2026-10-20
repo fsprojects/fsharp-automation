@@ -30,3 +30,8 @@
 - 2026-10-20T08:59Z: dotnet/fsharp#20799 — no change since 2026-10-19T22:12:54Z. fsharp-ci green on
   a18187e (53 check runs, all success), APPROVED by T-Gro, no new review comments,
   mergeable_state=blocked (awaiting abonie review) -> Category C healthy. noop.
+- 2026-10-20T20:57Z: dotnet/fsharp#20799 no longer in the open labelled set (merged/closed).
+  New: dotnet/fsharp#20816 — "Add regression test: #12708, prevent FCS from altering PATH"
+  (branch regression-test/issue12708-a881d5c5b3b296f2, head cd144bc, from dotnet/fsharp, not draft).
+  All 53 check runs success, 0 reviews, 0 review threads, 0 issue comments.
+  mergeable_state=blocked (awaiting abonie/T-Gro review) -> Category C healthy. noop.
