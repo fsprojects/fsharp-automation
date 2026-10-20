@@ -57,6 +57,12 @@ hand-deleted. Did NOT open a PR — sync-vs-diverge is a maintainer call.
 Only re-engage if a human replies.
 
 ## Run log (short)
+- 2026-10-20 12:50 UTC: re-verified issues (#1-#5,#7,#8,#10) and PRs (#6, #9 — both still open
+  drafts). Every stamp identical to the 2026-10-20 01:08 run: #4 2026-09-29, #8/#7 2026-10-14 12:53
+  (#7 body edited 01:12), #10 upd 2026-10-20 01:12 (my comment, still the only one — no human
+  reply), PR #6 2026-09-30, PR #9 2026-10-14. Only #5 ticked (2026-10-20 12:43) — machine noise.
+  14 labels, AI-thinks-* STILL absent => Tasks 2-3 no input; Task 1 has no pre-2024 issues.
+  noop; summary #7 not updated (no activity this run).
 - 2026-10-02 .. 2026-10-11 (18+ runs, twice daily): every run re-listed all issues (#1-#5, #7)
   and all PRs (only #6, still draft). No new issues, no new PRs, zero human comments anywhere.
   Stamps frozen at #4 2026-09-29, PR #6 2026-09-30, #7 2026-10-01. 13 repo labels unchanged;
