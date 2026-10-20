@@ -16,3 +16,4 @@
 {"run":"2026-10-19T09:03Z","prs":[{"n":20805,"cat":"C"},{"n":20799,"cat":"C"}]}
 {"run":"39256810607","ts":"2026-10-19T13:04Z","prs":[{"n":20805,"cat":"C"},{"n":20799,"cat":"C"}]}
 {"run":"39372332155","utc":"2026-10-20T04:59Z","prs_checked":[20799],"action":"noop","reason":"Category C healthy: CI green, approved, no new feedback"}
+{"run":"39426787516","utc":"2026-10-20T13:01Z","prs_checked":[20799],"action":"noop","reason":"Category C healthy: 53/53 CI green on a18187e, approved by T-Gro, 0 review threads, mergeable_state=blocked awaiting second reviewer"}
