@@ -42,6 +42,20 @@ Directory.Build.props one is discarded (4.6.2). "No way to pin" is overstated; t
 is only the pre-import sources. SetImplicitReferenceTest.proj sets it in the body -> not failing.
 Only re-engage if a human replies.
 
+## Issue #10 — HANDLED 2026-10-20 01:08. DO NOT RE-COMMENT.
+**First human-filed issue in this repo** (mab2500, 2026-10-17): commands.yml still present
+here after upstream deleted it. Verified ALL three claims at HEAD 199945a:
+- `git hash-object .github/workflows/commands.yml` = 87edd6211f02f7d2febac343777ef6c902749f16
+  (identical to upstream blob); workflow id 344815685, state=active, 0 runs.
+- upstream commit 8ed69ca457dbd159863867ae12f65b37f89779aa = PR dotnet/fsharp#20786,
+  merged by T-Gro 2026-10-15T10:28:47Z, changed_files 1 / deletions 236 / additions 0,
+  empty PR body (no stated rationale). Path now 404s on dotnet/fsharp@main.
+My two additions: (a) this clone's main is ~7wk behind upstream, so a routine sync carries
+the deletion for free — a manual delete is redundant; (b) `.github/docs/state-machine.md`
+row 6 is the ONLY other reference to commands.yml outside .git/ and must be updated if
+hand-deleted. Did NOT open a PR — sync-vs-diverge is a maintainer call.
+Only re-engage if a human replies.
+
 ## Run log (short)
 - 2026-10-02 .. 2026-10-11 (18+ runs, twice daily): every run re-listed all issues (#1-#5, #7)
   and all PRs (only #6, still draft). No new issues, no new PRs, zero human comments anywhere.
@@ -99,3 +113,9 @@ PR touching `src/`. Leave it to a human (it is already listed in summary #7).
   github-actions[bot], msbuild-quality, 2026-10-14 05:03/05:04) — duplicates of #4/#6.
   Commented on #8 and #9; updated monthly summary #7 (first update since creation).
   Still zero human comments anywhere. #1-#5 stamps unchanged.
+- 2026-10-20 01:08 UTC: NEW HUMAN ISSUE #10 (mab2500, 2026-10-17) — first ever human-filed
+  issue here. Verified and commented (see #10 section above). Updated monthly summary #7
+  (added #10 action items + observation; prepended run entry). Other stamps unchanged:
+  #4 2026-09-29, #8/#7 2026-10-14 12:53, PR #6 2026-09-30 (draft), PR #9 2026-10-14 (draft).
+  Label set now 14 (Needs-Triage added); AI-thinks-* labels STILL absent => Tasks 2-3 no input.
+  Only #5 ticks (machine noise).
