@@ -24,3 +24,6 @@
   run 39323589831). fsharp-ci green on a18187e, APPROVED by T-Gro 2026-10-19T14:35Z,
   0 review threads, no new human feedback. mergeable_state=blocked (awaiting abonie review /
   required checks gate) -> Category C healthy. noop.
+- 2026-10-20T04:59Z: dotnet/fsharp#20799 — unchanged since previous run. fsharp-ci green on
+  a18187e, APPROVED by T-Gro, 0 review threads, no new human feedback, no CI failures.
+  mergeable_state=blocked (awaiting second reviewer / merge gate) -> Category C healthy. noop.
