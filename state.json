@@ -1,17 +1,8 @@
 {
- "last_run": "39604467917",
- "last_run_id": "39604467917",
- "last_run_utc": "2026-10-21T13:03Z",
- "open_prs": [
-  {
-   "repo": "dotnet/fsharp",
-   "number": 20816,
-   "issue": 12708,
-   "category": "C",
-   "head_sha": "cd144bc9ffde0d113b28e1383c411650441816bc",
-   "note": "53/53 fsharp-ci green; 0 review comments; mergeable_state=blocked awaiting required review (abonie, T-Gro requested)"
-  }
- ],
+ "last_run": "39639467843",
+ "last_run_id": "39639467843",
+ "last_run_utc": "2026-10-21T16:59Z",
+ "open_prs": [],
  "processed_prs": [
   {
    "repo": "dotnet/fsharp",
@@ -35,6 +26,14 @@
    "note": "MERGED by T-Gro 2026-10-09T07:34:52Z (sha 5870e60). Included forward-fix to src/Compiler/Service/TransparentCompiler.fs. Issue #6036 resolved. No further action.",
    "head_sha": "5870e60c5512025affb8191503ff9d0f71343bd6",
    "last_addressed_comment_utc": "2026-10-08T05:00:00Z"
+  },
+  {
+   "repo": "dotnet/fsharp",
+   "number": 20816,
+   "issue": 12708,
+   "category": "Merged",
+   "note": "MERGED by T-Gro 2026-10-21T16:23:05Z. No further action.",
+   "head_sha": "cd144bc9ffde0d113b28e1383c411650441816bc"
   }
  ]
 }
