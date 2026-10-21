@@ -3,3 +3,4 @@
 | PR | Issue | Last run (UTC) | Category | Action |
 |----|-------|----------------|----------|--------|
 | dotnet/fsharp#20816 | #12708 | 2026-10-21 | C (healthy) | None — all 53 checks green, no review comments |
+| — | — | 2026-10-21 | n/a | No open AI-Issue-Regression-PR PRs; #20816 no longer open |
