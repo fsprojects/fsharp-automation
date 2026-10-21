@@ -35,3 +35,6 @@
   (branch regression-test/issue12708-a881d5c5b3b296f2, head cd144bc, from dotnet/fsharp, not draft).
   All 53 check runs success, 0 reviews, 0 review threads, 0 issue comments.
   mergeable_state=blocked (awaiting abonie/T-Gro review) -> Category C healthy. noop.
+- 2026-10-21T01:14Z: dotnet/fsharp#20816 — unchanged since 2026-10-20T13:14:24Z. All 53 check runs
+  success (head cd144bc), 0 reviews, 0 review threads, 0 PR comments. mergeable_state=blocked
+  (awaiting abonie/T-Gro review) -> Category C healthy. noop.
