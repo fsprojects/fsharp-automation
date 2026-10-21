@@ -57,6 +57,12 @@ hand-deleted. Did NOT open a PR — sync-vs-diverge is a maintainer call.
 Only re-engage if a human replies.
 
 ## Run log (short)
+- 2026-10-21 01:08 UTC: re-verified issues (#1-#5,#7,#8,#10) and PRs (#6, #9 — both still open
+  drafts). Every stamp identical to the 2026-10-20 12:50 run: #4 2026-09-29, #8/#7 2026-10-14
+  12:53, #10 upd 2026-10-20 01:12 (comment list re-read: still exactly 1 comment, mine — no
+  human reply), PR #6 2026-09-30, PR #9 2026-10-14. 14 labels, AI-thinks-* STILL absent =>
+  Tasks 2-3 no input; Task 1 has no pre-2024 issues. Only #5 ticked (2026-10-21 01:02) —
+  machine noise. noop; summary #7 not updated (no activity this run).
 - 2026-10-20 12:50 UTC: re-verified issues (#1-#5,#7,#8,#10) and PRs (#6, #9 — both still open
   drafts). Every stamp identical to the 2026-10-20 01:08 run: #4 2026-09-29, #8/#7 2026-10-14 12:53
   (#7 body edited 01:12), #10 upd 2026-10-20 01:12 (my comment, still the only one — no human
@@ -83,21 +89,8 @@ Only re-engage if a human replies.
   updated 2026-09-30). All stamps identical to the 2026-10-13 runs; #4 2026-09-29,
   #7 2026-10-01. Only #5 ticked (2026-10-14 01:01). Zero human comments anywhere. noop.
 
-- 2026-10-16 12:49 UTC: re-verified issues (#1-#5,#7,#8) and PRs (#6, #9 — both still open drafts).
-  Every stamp identical to the 2026-10-16 01:05 run: #4 upd 2026-09-29, #8 upd 2026-10-14 12:53,
-  #7 upd 2026-10-14 12:53, PR #6 upd 2026-09-30, PR #9 upd 2026-10-14 12:53. Only #5 ([aw]
-  Detection Runs) ticked (2026-10-16 12:42) — machine noise. No AI-thinks-* labels exist, so
-  Tasks 1-3 have no input. Zero human comments anywhere. noop; summary #7 not updated.
-- 2026-10-16 01:05 UTC: re-verified issues (#1-#5,#7,#8) and PRs (#6, #9 — both still open drafts).
-  Every stamp identical to the 2026-10-15 12:51 run: #4 upd 2026-09-29, #8 upd 2026-10-14 12:53,
-  #7 upd 2026-10-14 12:53, PR #6 upd 2026-09-30, PR #9 upd 2026-10-14 12:53. Only #5 ([aw]
-  Detection Runs) ticked (2026-10-16 00:59) — machine noise. No AI-thinks-* labels exist, so
-  Tasks 1-3 have no input. Zero human comments anywhere. noop; summary #7 not updated.
-- 2026-10-15 12:51 UTC: re-verified issues (#1-#5,#7,#8) and PRs (#6, #9 — both still open drafts).
-  Every stamp identical to the 2026-10-15 01:06 run: #4 upd 2026-09-29, #8 upd 2026-10-14 12:53,
-  #7 upd 2026-10-14 12:53, PR #6 upd 2026-09-30, PR #9 upd 2026-10-14 12:53. Only #5 ([aw]
-  Detection Runs) ticked (2026-10-15 12:43) — machine noise. No AI-thinks-* labels exist, so
-  Tasks 1-3 have no input. Zero human comments anywhere. noop; summary #7 not updated.
+- 2026-10-15 12:51 / 2026-10-16 01:05 / 2026-10-16 12:49 UTC: re-verified issues (#1-#5,#7,#8)
+  and PRs (#6, #9 — both open drafts). All stamps frozen; only #5 ticks. noop each run.
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
