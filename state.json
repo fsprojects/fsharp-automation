@@ -1,15 +1,15 @@
 {
- "last_run": "39426787516",
- "last_run_id": "39426787516",
- "last_run_utc": "2026-10-20T13:01Z",
+ "last_run": "39604467917",
+ "last_run_id": "39604467917",
+ "last_run_utc": "2026-10-21T13:03Z",
  "open_prs": [
   {
    "repo": "dotnet/fsharp",
-   "number": 20799,
-   "issue": 13084,
+   "number": 20816,
+   "issue": 12708,
    "category": "C",
-   "head_sha": "a18187e0eae382bd74c252f86bd2aebf83b7da38",
-   "note": "conflict resolved; 53/53 fsharp-ci green on a18187e; APPROVED by T-Gro; 0 review threads; mergeable_state=blocked awaiting second reviewer (abonie requested)"
+   "head_sha": "cd144bc9ffde0d113b28e1383c411650441816bc",
+   "note": "53/53 fsharp-ci green; 0 review comments; mergeable_state=blocked awaiting required review (abonie, T-Gro requested)"
   }
  ],
  "processed_prs": [
