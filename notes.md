@@ -56,6 +56,28 @@ row 6 is the ONLY other reference to commands.yml outside .git/ and must be upda
 hand-deleted. Did NOT open a PR — sync-vs-diverge is a maintainer call.
 Only re-engage if a human replies.
 
+## Issue #11 — ALL THREE FINDINGS VERIFIED 2026-10-21 12:51. DO NOT RE-COMMENT.
+New msbuild-quality report (github-actions, 2026-10-21 05:04). Verified at HEAD 199945a,
+SDK 10.0.402 / MSBuild 18.9.15.50611, Linux. Repro dir was /tmp/gh-aw/agent/repro.
+- 🔴 @(CompileFirst)/@(CompileLast) item types declared in NetSdk.props:144-146,156-158 but
+  FSharpSourceCodeCompileOrder (Targets:258-277) only reads the METADATA form. CONFIRMED.
+  Repro A: <CompileFirst Include="a.fs"/> + <Compile Include="Program.fs"/> -> error FS0039.
+  Repro B (MY ADDITION, not in issue): <Compile a.fs/> + <CompileLast Program.fs/> ->
+  "Build succeeded." with ZERO diagnostics, Program.fs + [<EntryPoint>] silently dropped.
+  Proof via target's own msg: `dotnet build -v:diag | grep FSharpSourceCodeCompileOrder:Sources`.
+  Controls pass: CompileBefore item type, and Compile CompileOrder="CompileFirst" metadata.
+  MY ADDITION 2: second ItemGroup lacks CompileFirst/CompileLast `Remove` lines -> double-splice
+  risk if target runs twice. No PR opened (changes shipped-SDK ordering semantics = maintainer call;
+  also the PR safe-output force-prefixes "Add regression test:" which doesn't fit).
+- 🟡 shim D-4 CONFIRMED but issue OVERSTATES: both branches of the two NetSdk .targets shims
+  import the SAME path (ShimHelpers.props:29 sets FSharpCompilerPath = Fsc_NetFramework_ToolPath
+  = $(VsInstallRoot)/Common7/IDE/.../Tools/, identical to the hardcoded fallback). What is really
+  lost: Fsc_NetFramework_PlatformSpecific_ToolExe, Fsc_DotNet_CompilerPath,
+  Fsc_DotNET_DotnetFscCompilerPath, the Core.NetSdk.props import, FSCorePackageVersion fallback.
+  NOT a duplicate of #4's shim item (that one is rule D-1, missing Exists() guards).
+- 🔵 _FsGeneratedTfmAttributesSource (Targets:465) dead: grep has exactly 1 hit, the write.
+Only re-engage if a human replies.
+
 ## Run log (short)
 - 2026-10-21 01:08 UTC: re-verified issues (#1-#5,#7,#8,#10) and PRs (#6, #9 — both still open
   drafts). Every stamp identical to the 2026-10-20 12:50 run: #4 2026-09-29, #8/#7 2026-10-14
@@ -118,3 +140,11 @@ PR touching `src/`. Leave it to a human (it is already listed in summary #7).
   #4 2026-09-29, #8/#7 2026-10-14 12:53, PR #6 2026-09-30 (draft), PR #9 2026-10-14 (draft).
   Label set now 14 (Needs-Triage added); AI-thinks-* labels STILL absent => Tasks 2-3 no input.
   Only #5 ticks (machine noise).
+
+- 2026-10-21 12:51 UTC: NEW ISSUE #11 (msbuild-quality, 2026-10-21 05:04). Verified all 3
+  findings + added 2 of my own (silent CompileLast drop; missing Remove lines) and 1 correction
+  (shim fallback path does NOT diverge). Commented on #11; rewrote monthly summary #7 (added #11
+  items, prepended run entry, dropped the stale shim bullet). No new PRs (still only #6, #9,
+  both open drafts). 14 labels, AI-thinks-* STILL absent => Tasks 2-3 no input; Task 1 has no
+  pre-2024 issues. Notable: #11 explicitly excluded findings already tracked in #4/#8, so the
+  msbuild-quality dedup logic may have improved since the #8/#9 duplicate incident.
