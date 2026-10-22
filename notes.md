@@ -80,47 +80,19 @@ Only re-engage if a human replies.
 
 ## Run log (short)
 
-- 2026-10-22 01:06 UTC: re-verified issues (#1-#5,#7,#8,#10,#11) and PRs (#6, #9 - both still
-  open drafts, unchanged). Every stamp identical to the 2026-10-21 12:51 run: #4 2026-09-29,
-  #8 2026-10-14 12:53, #10 2026-10-20 01:12, #11 upd 2026-10-21 12:57 (comments re-read: still
-  exactly 1, mine - no human reply), #7 upd 2026-10-21 12:57 with 0 comments, PR #6 2026-09-30,
-  PR #9 2026-10-14. 14 labels, AI-thinks-* STILL absent => Tasks 2-3 no input; Task 1 has no
-  pre-2024 issues. Only #5 ticked (2026-10-22 01:00) - machine noise. No new issues/PRs since
-  #11. noop; summary #7 not updated (no activity this run).
-- 2026-10-21 01:08 UTC: re-verified issues (#1-#5,#7,#8,#10) and PRs (#6, #9 — both still open
-  drafts). Every stamp identical to the 2026-10-20 12:50 run: #4 2026-09-29, #8/#7 2026-10-14
-  12:53, #10 upd 2026-10-20 01:12 (comment list re-read: still exactly 1 comment, mine — no
-  human reply), PR #6 2026-09-30, PR #9 2026-10-14. 14 labels, AI-thinks-* STILL absent =>
-  Tasks 2-3 no input; Task 1 has no pre-2024 issues. Only #5 ticked (2026-10-21 01:02) —
-  machine noise. noop; summary #7 not updated (no activity this run).
-- 2026-10-20 12:50 UTC: re-verified issues (#1-#5,#7,#8,#10) and PRs (#6, #9 — both still open
-  drafts). Every stamp identical to the 2026-10-20 01:08 run: #4 2026-09-29, #8/#7 2026-10-14 12:53
-  (#7 body edited 01:12), #10 upd 2026-10-20 01:12 (my comment, still the only one — no human
-  reply), PR #6 2026-09-30, PR #9 2026-10-14. Only #5 ticked (2026-10-20 12:43) — machine noise.
-  14 labels, AI-thinks-* STILL absent => Tasks 2-3 no input; Task 1 has no pre-2024 issues.
-  noop; summary #7 not updated (no activity this run).
-- 2026-10-02 .. 2026-10-11 (18+ runs, twice daily): every run re-listed all issues (#1-#5, #7)
-  and all PRs (only #6, still draft). No new issues, no new PRs, zero human comments anywhere.
-  Stamps frozen at #4 2026-09-29, PR #6 2026-09-30, #7 2026-10-01. 13 repo labels unchanged;
-  `AI-thinks-issue-fixed` / `AI-thinks-windows-only` still absent, so Tasks 1-3 have no input.
-  Only #5 ([aw] Detection Runs) ticks each run — machine noise, do not touch.
-  Every run -> noop; monthly summary #7 NOT updated (no activity).
-- 2026-10-12 01:26 UTC: issues (#1-#5,#7), PRs (only #6, draft, updated 2026-09-30) and the
-  13 labels re-verified — all stamps unchanged vs. previous run. Only #5 ticked
-  (2026-10-12 01:19). noop; summary #7 not updated.
-- 2026-10-12 13:13 UTC: re-verified issues (#1-#5,#7), PRs (only #6, draft, 2026-09-30) and
-  the 13 labels. All stamps identical to the 01:26 run; #4 still 2026-09-29, #7 still
-  2026-10-01. Only #5 ticked (2026-10-12 13:04). Zero human comments anywhere. noop.
-- 2026-10-13 01:21 and 12:57 UTC: re-verified issues (#1-#5,#7), PRs (only #6, draft,
-  2026-09-30) and the 13 labels. All stamps identical to the 2026-10-12 13:13 run; #4 still
-  2026-09-29, #7 still 2026-10-01, #7 has zero comments. Only #5 ticked (2026-10-13 12:49).
-  Zero human comments anywhere. noop.
-- 2026-10-14 01:07 UTC: re-verified issues (#1-#5,#7) and PRs (only #6, open, draft,
-  updated 2026-09-30). All stamps identical to the 2026-10-13 runs; #4 2026-09-29,
-  #7 2026-10-01. Only #5 ticked (2026-10-14 01:01). Zero human comments anywhere. noop.
-
-- 2026-10-15 12:51 / 2026-10-16 01:05 / 2026-10-16 12:49 UTC: re-verified issues (#1-#5,#7,#8)
-  and PRs (#6, #9 — both open drafts). All stamps frozen; only #5 ticks. noop each run.
+- **2026-10-02 .. 2026-10-22 (40+ runs, twice daily): all no-op except the four below.**
+  Every run re-lists issues #1-#5,#7,#8,#10,#11 and PRs #6,#9 (both open drafts). Stamps frozen:
+  #4 2026-09-29, #8 2026-10-14 12:53, #10 2026-10-20 01:12, #11/#7 2026-10-21 12:57,
+  PR #6 2026-09-30, PR #9 2026-10-14. 14 labels; AI-thinks-* absent => Tasks 2-3 no input;
+  Task 1 has no pre-2024 issues. Only #5 ([aw] Detection Runs) ticks each run - machine noise,
+  do not touch. ZERO human comments anywhere, ever. Latest such run: 2026-10-22 12:52 UTC.
+- 2026-10-14 12:49: new issue #8 + PR #9 (msbuild-quality) - duplicates of #4/#6. Commented on
+  both; first update to summary #7.
+- 2026-10-20 01:08: NEW HUMAN ISSUE #10 (mab2500). Verified + commented; updated #7.
+  Needs-Triage label added (14 total).
+- 2026-10-21 12:51: NEW ISSUE #11 (msbuild-quality). Verified all 3 findings, added 2 of my own
+  + 1 correction. Commented; rewrote summary #7. Notable: #11 explicitly excluded findings
+  already tracked in #4/#8, so msbuild-quality dedup may have improved since the #8/#9 incident.
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
