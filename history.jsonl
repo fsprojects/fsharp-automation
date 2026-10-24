@@ -20,3 +20,4 @@
 {"run": "39639467843", "utc": "2026-10-21T16:59Z", "prs_checked": [20816], "action": "noop", "reason": "PR 20816 merged; no open AI-Issue-Regression-PR PRs remain"}
 {"run":"39674609720","date":"2026-10-21","result":"no-eligible-prs","detail":"Search for open PRs labeled AI-Issue-Regression-PR in dotnet/fsharp and org:fsprojects returned 0 results. Previously tracked PR dotnet/fsharp#20816 is no longer open."}
 {"run":"40023026023","utc":"2026-10-23T20:57Z","prs_checked":[],"action":"noop","reason":"0 open PRs labeled AI-Issue-Regression-PR in dotnet/fsharp or fsprojects/fsharp-automation"}
+{"run_id":"40048679983","utc":"2026-10-24T01:13Z","result":"no open AI-Issue-Regression-PR PRs found"}
