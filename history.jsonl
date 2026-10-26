@@ -22,3 +22,4 @@
 {"run":"40023026023","utc":"2026-10-23T20:57Z","prs_checked":[],"action":"noop","reason":"0 open PRs labeled AI-Issue-Regression-PR in dotnet/fsharp or fsprojects/fsharp-automation"}
 {"run_id":"40048679983","utc":"2026-10-24T01:13Z","result":"no open AI-Issue-Regression-PR PRs found"}
 {"run_id":"40113821255","utc":"2026-10-24T17:11Z","result":"no open AI-Issue-Regression-PR PRs found"}
+{"run_id":"40296824266","utc":"2026-10-26T09:06Z","result":"aborted: GitHub MCP server unavailable (WASM guard trap), gh CLI unauthenticated - could not list PRs"}
