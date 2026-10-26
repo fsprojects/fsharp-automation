@@ -85,8 +85,11 @@ Only re-engage if a human replies.
   #4 2026-09-29, #8 2026-10-14 12:53, #10 2026-10-20 01:12, #11/#7 2026-10-21 12:57,
   PR #6 2026-09-30, PR #9 2026-10-14. 14 labels; AI-thinks-* absent => Tasks 2-3 no input;
   Task 1 has no pre-2024 issues. Only #5 ([aw] Detection Runs) ticks each run - machine noise,
-  do not touch. ZERO human comments anywhere, ever. Latest such run: 2026-10-25 12:45 UTC (3rd consecutive quiet run; stamps byte-identical
-  to the 2026-10-21 run; 14 labels; only #5 ticked, now 1039 comments).
+  do not touch. ZERO human comments anywhere, ever. Latest: 2026-10-26 01:12 UTC (4th consecutive quiet run; issue/PR updated_at stamps
+  byte-identical to the 2026-10-21 run: #4 2026-09-29, #8 2026-10-14 12:53, #10 2026-10-20 01:12,
+  #11/#7 2026-10-21 12:57; PRs #6/#9 still open drafts; 14 labels, AI-thinks-* still absent =>
+  Tasks 2-3 no input, Task 1 no pre-2024 issues; #7 has 0 comments and 0 ticked checkboxes;
+  only #5 ticked, 1059 comments. noop; #7 NOT updated per Task FINAL rule 5; cursors c/woc/rtc=0.)
 - 2026-10-14 12:49: new issue #8 + PR #9 (msbuild-quality) - duplicates of #4/#6. Commented on
   both; first update to summary #7.
 - 2026-10-20 01:08: NEW HUMAN ISSUE #10 (mab2500). Verified + commented; updated #7.
@@ -129,30 +132,3 @@ PR touching `src/`. Leave it to a human (it is already listed in summary #7).
   both open drafts). 14 labels, AI-thinks-* STILL absent => Tasks 2-3 no input; Task 1 has no
   pre-2024 issues. Notable: #11 explicitly excluded findings already tracked in #4/#8, so the
   msbuild-quality dedup logic may have improved since the #8/#9 duplicate incident.
-
-- 2026-10-25 01:12 UTC: NO new activity since the 2026-10-21 run (2nd consecutive quiet run).
-  Issues #1,#2,#3,#4,#5,#7,#8,#10,#11 all open, stamps byte-identical to 2026-10-24
-  (#4 2026-09-29, #8 2026-10-14 12:53, #10 2026-10-20 01:12, #11/#7 2026-10-21 12:57).
-  Only #5 ([aw] Detection Runs, now 1019 comments) ticked - machine noise, do not touch.
-  PRs: still only #6 and #9, both open drafts, upd 2026-09-30 / 2026-10-14. 14 labels;
-  AI-thinks-issue-fixed / AI-thinks-windows-only STILL absent => Tasks 2-3 have no input;
-  Task 1 has no pre-2024 issues. Zero human comments anywhere, ever; no checkboxes ticked
-  in summary #7. Called noop; #7 NOT updated (Task FINAL rule 5). Cursors unchanged (c/woc/rtc=0).
-
-- 2026-10-24 12:45 UTC: NO new activity since the 2026-10-21 run. Issues unchanged
-  (#1,#2,#3,#4,#5,#7,#8,#10,#11 open; comment counts identical: #4=2 mine, #8/#10/#11=1 mine,
-  #7=0, #2=1 bot). PRs unchanged (#6, #9, both open drafts, upd 2026-09-30 / 2026-10-14).
-  Zero human comments anywhere; no checkboxes ticked in summary #7. AI-thinks-* labels still
-  absent => Tasks 2-3 no input; Task 1 has no pre-2024 issues. Called noop; summary #7 NOT
-  updated (no activity to record, per Task FINAL rule 5). Cursors unchanged (c/woc/rtc = 0).
-
-- 2026-10-25 12:45 UTC: THIRD consecutive quiet run. Nothing changed since 2026-10-21.
-  Issues #1,#2,#3,#4,#5,#7,#8,#10,#11 open; updated_at stamps byte-identical to the
-  2026-10-25 01:12 run (#4 2026-09-29, #8 2026-10-14 12:53, #10 2026-10-20 01:12,
-  #11 and #7 2026-10-21 12:57). Only #5 ([aw] Detection Runs) ticked, 1019 -> 1039 comments
-  (machine noise, do not touch). PRs: still only #6 and #9, both open drafts, upd
-  2026-09-30 13:02 / 2026-10-14 12:53, neither merged. 14 labels; AI-thinks-issue-fixed /
-  AI-thinks-windows-only STILL absent => Tasks 2-3 have no input; Task 1 has no pre-2024
-  issues. Summary #7 has 0 comments and ZERO ticked checkboxes (re-read body in full).
-  Called noop; #7 NOT updated (Task FINAL rule 5 - no activity this run).
-  Cursors unchanged (c/woc/rtc = 0).
