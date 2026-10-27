@@ -1,3 +1,4 @@
 2026-10-25T20:57:28Z run=40233074868 no open AI-Issue-Regression-PR PRs found (dotnet/fsharp, fsprojects/fsharp-automation)
 2026-10-26T09:06Z run=40296824266 ABORTED: GitHub MCP unavailable (WASM guard trap); no PR data readable
 2026-10-27T01:20Z run=40431585400 ABORTED: GitHub MCP unavailable (WASM guard trap on first call, did not recover after 80s); no PR data readable
+2026-10-27T20:57Z run=40582436678 no open AI-Issue-Regression-PR PRs found (dotnet/fsharp, fsprojects/fsharp-automation)
