@@ -57,25 +57,53 @@ hand-deleted. Did NOT open a PR — sync-vs-diverge is a maintainer call.
 Only re-engage if a human replies.
 
 ## Issue #11 — ALL THREE FINDINGS VERIFIED 2026-10-21 12:51. DO NOT RE-COMMENT.
-New msbuild-quality report (github-actions, 2026-10-21 05:04). Verified at HEAD 199945a,
-SDK 10.0.402 / MSBuild 18.9.15.50611, Linux. Repro dir was /tmp/gh-aw/agent/repro.
-- 🔴 @(CompileFirst)/@(CompileLast) item types declared in NetSdk.props:144-146,156-158 but
-  FSharpSourceCodeCompileOrder (Targets:258-277) only reads the METADATA form. CONFIRMED.
-  Repro A: <CompileFirst Include="a.fs"/> + <Compile Include="Program.fs"/> -> error FS0039.
-  Repro B (MY ADDITION, not in issue): <Compile a.fs/> + <CompileLast Program.fs/> ->
-  "Build succeeded." with ZERO diagnostics, Program.fs + [<EntryPoint>] silently dropped.
-  Proof via target's own msg: `dotnet build -v:diag | grep FSharpSourceCodeCompileOrder:Sources`.
-  Controls pass: CompileBefore item type, and Compile CompileOrder="CompileFirst" metadata.
-  MY ADDITION 2: second ItemGroup lacks CompileFirst/CompileLast `Remove` lines -> double-splice
-  risk if target runs twice. No PR opened (changes shipped-SDK ordering semantics = maintainer call;
-  also the PR safe-output force-prefixes "Add regression test:" which doesn't fit).
-- 🟡 shim D-4 CONFIRMED but issue OVERSTATES: both branches of the two NetSdk .targets shims
-  import the SAME path (ShimHelpers.props:29 sets FSharpCompilerPath = Fsc_NetFramework_ToolPath
-  = $(VsInstallRoot)/Common7/IDE/.../Tools/, identical to the hardcoded fallback). What is really
-  lost: Fsc_NetFramework_PlatformSpecific_ToolExe, Fsc_DotNet_CompilerPath,
-  Fsc_DotNET_DotnetFscCompilerPath, the Core.NetSdk.props import, FSCorePackageVersion fallback.
-  NOT a duplicate of #4's shim item (that one is rule D-1, missing Exists() guards).
-- 🔵 _FsGeneratedTfmAttributesSource (Targets:465) dead: grep has exactly 1 hit, the write.
+Verified at HEAD 199945a, SDK 10.0.402, Linux.
+- CompileFirst/CompileLast declared (NetSdk.props:144-146,156-158) but FSharpSourceCodeCompileOrder
+  (Targets:258-277) reads only the METADATA form. Repro A: <CompileFirst a.fs/> -> error FS0039.
+  Repro B (MY ADDITION): <CompileLast Program.fs/> -> "Build succeeded." ZERO diagnostics,
+  [<EntryPoint>] silently dropped. Proof: dotnet build -v:diag | grep FSharpSourceCodeCompileOrder:Sources.
+  MY ADDITION 2: second ItemGroup lacks CompileFirst/CompileLast Remove lines -> double-splice risk.
+- shim D-4 CONFIRMED but OVERSTATED: both branches import the SAME path (ShimHelpers.props:29
+  FSharpCompilerPath == the hardcoded fallback). What's lost: Fsc_NetFramework_PlatformSpecific_ToolExe,
+  Fsc_DotNet_CompilerPath, Fsc_DotNET_DotnetFscCompilerPath, Core.NetSdk.props import,
+  FSCorePackageVersion fallback. NOT a dup of #4's shim item (that's D-1 missing Exists()).
+- _FsGeneratedTfmAttributesSource (Targets:465) dead. (#13 later restated this -> dedup regression.)
+- STALE/WRONG in #11: it declared _CheckForUnsupportedFSharpCoreVersion "sound". #13/PR#12 disproved it.
+No PR opened (shipped-SDK ordering semantics = maintainer call; PR safe-output force-prefixes
+"Add regression test:" which doesn't fit). Only re-engage if a human replies.
+
+
+## Issue #13 / PR #12 — HANDLED 2026-10-28 12:41. DO NOT RE-COMMENT.
+New msbuild-quality report #13 + companion draft PR #12 (both github-actions, 2026-10-28 05:06).
+Verified at HEAD 199945a, SDK 11.0.100-preview.6.26359.118 / MSBuild 18.9.0.36018, Linux.
+Probes in /tmp/gh-aw/agent/probe (a=unguarded parse, b=patched parse, c=batching, d=de-batch).
+ALL FIVE #13 findings CONFIRMED technically, plus my 3 additions/corrections:
+- F1 Fsc task-batching on %(_CoreCompileResourceInputs.WithCulture): CONFIRMED.
+  Probe c: stray item w/o WithCulture -> TWO byte-identical invocations. Empty group -> 1 (benign).
+  MY CORRECTION: #13's "culture resources never removed from what is handed to the compiler" is
+  WRONG. SDK Microsoft.Common.CurrentVersion.targets:3698/3699 filter WithCulture=='false';
+  3702/3706 explicitly stamp <WithCulture>false</WithCulture>. All 4 sites => _CoreCompileResourceInputs
+  is culture-free by construction. Condition is a vestigial XBuild-era no-op, not a live bug.
+  MY ADDITION: verified de-batching fix (property hoist with WithMetadataValue), 1 invocation in all
+  4 culture/stray combos, same Resources= lists. Cheaper than #13's "needs resource-heavy test project".
+- F2 _FsGeneratedTfmAttributesSource dead: CONFIRMED (grep 1 hit) but EXACT DUPLICATE of #11's
+  blue "Dead item write", despite #13 claiming it restates nothing from #11. Dedup REGRESSION
+  (#11 had deduped correctly vs #4/#8).
+- F3 _CheckForUnsupportedFSharpCoreVersion: CONFIRMED. Probe a reproduced
+  "error MSB4184 ... [System.Version]::Parse('')". Count()==1 constrains item count not metadata.
+  MY CORRECTION: it's a TARGET-EXECUTION error (AfterTargets=ResolvePackageAssets), NOT
+  "project fails to evaluate" as both #13 and PR #12 say. Restore/design-time builds unaffected.
+  NOTABLE: #13 REVERSES #11, which declared this target "sound ... both operands proven non-empty
+  by the Count()==1 guard". #13 is right, #11 was wrong. Flagged on both.
+- S4 LangVersion hardcode (NetSdk.props:101-103): CONFIRMED. MY CORRECTION: pinned in TWO places
+  (value AND StartsWith('11.') in condition); #13's fix only changes one => still dormant on SDK 12.
+  Also LangVersion is an F# language version, separate numbering from SDK version.
+- S5 GenerateFSharpTextResources (Targets:227-228) no Inputs/Outputs: CONFIRMED.
+PR #12 verified GOOD: probe b, 4 versions. empty->no crash/no warning; 9.0.0->major 9, tooHigh empty
+(proves quoting KEEPS numeric comparison: string cmp would give '9'>'10'=true); 10.0.0->empty;
+11.0.0-beta->major 11, tooHigh=true. MY ADDITION: NO CI check reaches the fixed branch (needs a
+ReferencePath lacking NuGetPackageVersion, which ResolvePackageAssets never emits) => green CI
+only proves the happy path. Commented on both #13 and PR #12; rewrote summary #7.
 Only re-engage if a human replies.
 
 ## Run log (short)
@@ -86,7 +114,9 @@ Only re-engage if a human replies.
   PR #6 2026-09-30, PR #9 2026-10-14. 14 labels; AI-thinks-* absent => Tasks 2-3 no input;
   Task 1 has no pre-2024 issues. Only #5 ([aw] Detection Runs) ticks each run - machine noise,
   do not touch. ZERO human comments anywhere, ever.
-  Latest: 2026-10-28 00:55 UTC (8th consecutive quiet run; issue/PR updated_at stamps byte-identical
+  Latest: 2026-10-28 12:41 UTC — NOT quiet: NEW issue #13 + NEW PR #12 (msbuild-quality, 2026-10-28
+  05:06). Commented on both, rewrote #7. Quiet-streak broken at 8. 14 labels, AI-thinks-* absent.
+  Prior: 2026-10-28 00:55 UTC (8th consecutive quiet run; issue/PR updated_at stamps byte-identical
   to the 2026-10-27 12:54 run except #5 -> 2026-10-28 00:51. No issue #9/#12+; PRs still only #6/#9,
   both open drafts. #7 upd 2026-10-21, still 0 comments / 0 ticked checkboxes; 14 labels,
   AI-thinks-* still absent. noop; #7 NOT updated per Task FINAL rule 5; cursors c/woc/rtc=0,
@@ -114,26 +144,3 @@ The `safe-outputs.create-pull-request` config for this workflow force-prefixes t
 shape only fits Task 2 regression-test PRs. Opening the one-line `@(FileWrites)` fix for
 `GenerateFSharpILLinkSubstitutions` through it would ship a mislabelled, misleadingly-titled
 PR touching `src/`. Leave it to a human (it is already listed in summary #7).
-- 2026-10-15 01:06 UTC: re-verified issues (#1-#5,#7,#8) and PRs (#6 and #9, both open drafts).
-  Everything identical to the 2026-10-14 12:49 run: #4 2 comments (both mine, 2026-09-29),
-  #8 1 comment (mine, 2026-10-14 12:53), #7 still 0 comments, PR #9 upd 2026-10-14 12:53,
-  PR #6 upd 2026-09-30. 13 labels unchanged, no AI-thinks-* labels => Tasks 1-3 no input.
-  Zero human comments anywhere. noop; summary #7 not updated (no activity this run).
-- 2026-10-14 12:49 UTC: FIRST new activity in ~2 weeks. New issue #8 and new PR #9 (both
-  github-actions[bot], msbuild-quality, 2026-10-14 05:03/05:04) — duplicates of #4/#6.
-  Commented on #8 and #9; updated monthly summary #7 (first update since creation).
-  Still zero human comments anywhere. #1-#5 stamps unchanged.
-- 2026-10-20 01:08 UTC: NEW HUMAN ISSUE #10 (mab2500, 2026-10-17) — first ever human-filed
-  issue here. Verified and commented (see #10 section above). Updated monthly summary #7
-  (added #10 action items + observation; prepended run entry). Other stamps unchanged:
-  #4 2026-09-29, #8/#7 2026-10-14 12:53, PR #6 2026-09-30 (draft), PR #9 2026-10-14 (draft).
-  Label set now 14 (Needs-Triage added); AI-thinks-* labels STILL absent => Tasks 2-3 no input.
-  Only #5 ticks (machine noise).
-
-- 2026-10-21 12:51 UTC: NEW ISSUE #11 (msbuild-quality, 2026-10-21 05:04). Verified all 3
-  findings + added 2 of my own (silent CompileLast drop; missing Remove lines) and 1 correction
-  (shim fallback path does NOT diverge). Commented on #11; rewrote monthly summary #7 (added #11
-  items, prepended run entry, dropped the stale shim bullet). No new PRs (still only #6, #9,
-  both open drafts). 14 labels, AI-thinks-* STILL absent => Tasks 2-3 no input; Task 1 has no
-  pre-2024 issues. Notable: #11 explicitly excluded findings already tracked in #4/#8, so the
-  msbuild-quality dedup logic may have improved since the #8/#9 duplicate incident.
