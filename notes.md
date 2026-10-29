@@ -1,13 +1,14 @@
 # Regression PR Shepherd — notes
 
-Consolidated 2026-10-29. Single source of truth: `state.json` (processed PRs) + `shepherd-runs.txt` (run log).
+Single source of truth: `shepherd-state.json` (last run + processed PRs) + `shepherd-runs.txt` (last ~8 runs only; trim to stay under the 10 KB memory patch limit).
 
 ## Recurring infra issue
-The GitHub MCP server frequently traps on the first call
-("WASM guard 'github' is unavailable after a previous trap" / "context deadline exceeded")
-and never recovers. `gh` is unauthenticated, so there is no fallback read path via gh.
+The GitHub MCP server sometimes traps on the first call ("WASM guard 'github' is unavailable
+after a previous trap" / "context deadline exceeded") and never recovers. `gh` is unauthenticated.
 
-**Fallback that has worked:** unauthenticated
-`curl https://api.github.com/search/issues?q=...` returns public data fine.
-Try this first when MCP traps. (Note: in some sandboxes the firewall blocks api.github.com;
-if curl also fails, call `report_incomplete`.)
+**Fallback that has worked:** unauthenticated `curl https://api.github.com/search/issues?q=...`.
+If curl is also firewall-blocked, call `report_incomplete`.
+
+## Memory hygiene
+Total memory must stay under ~10 KB. Do not add new log files; append one line per run to
+`shepherd-runs.txt` and trim it to the last 8 lines.
