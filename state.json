@@ -1,7 +1,7 @@
 {
- "last_run": "40820489908",
- "last_run_id": "40820489908",
- "last_run_utc": "2026-10-29T04:57Z",
+ "last_run": "40877432833",
+ "last_run_id": "40877432833",
+ "last_run_utc": "2026-10-29T12:57Z",
  "open_prs": [],
  "processed_prs": [
   {
@@ -36,5 +36,5 @@
    "head_sha": "cd144bc9ffde0d113b28e1383c411650441816bc"
   }
  ],
- "notes": "No open AI-Issue-Regression-PR PRs. GitHub MCP unavailable; used unauthenticated curl to api.github.com search API as fallback."
+ "notes": "No open AI-Issue-Regression-PR PRs. Memory consolidated to notes.md + state.json + shepherd-runs.txt."
 }
