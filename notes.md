@@ -1,16 +1,12 @@
 # Repo Assist notes — fsprojects/fsharp-automation
 
 ## Repository shape
-This repo is a fork/mirror of the F# compiler source. It has **no human-filed bug issues**.
-All open issues are automation-generated:
-- #1, #2, #7 — Repo Assist monthly activity summaries. **#7 is the live 2026-10 one**
-  (`ms` = 7). #1 (2026-08) and #2 (2026-09) are superseded; a maintainer should close them.
-- #3, #5 — `[aw] Detection Runs` trackers (do not touch)
-- #4 — MSBuild File Quality Report (real, actionable findings)
-
-No `AI-thinks-issue-fixed` or `AI-thinks-windows-only` labels exist in the repo, and those
-labels are not in the repo's label list. Tasks 1–3 therefore have nothing to process.
-Cursors `c`, `woc`, `rtc` stay at 0 for this reason — they are not stale.
+Fork/mirror of the F# compiler source. Almost no human-filed issues; nearly all are
+automation-generated. #1/#2/#7 = Repo Assist monthly summaries (**#7 is live, `ms`=7**; #1,#2
+superseded, maintainer should close). #3/#5 = `[aw] Detection Runs` trackers (do not touch).
+#4/#8/#11/#13 = MSBuild File Quality Reports. AI-thinks-issue-fixed / AI-thinks-windows-only
+labels do NOT exist in this repo => Tasks 1-3 have nothing to process; cursors c/woc/rtc stay 0
+(not stale).
 
 ## Issue #4 — ALL FIVE FINDINGS VERIFIED. DO NOT RE-COMMENT.
 Verified against HEAD `199945ab34433a3ec257e35e1fd30577a89ae350` (2026-08-28):
@@ -107,41 +103,24 @@ only proves the happy path. Commented on both #13 and PR #12; rewrote summary #7
 Only re-engage if a human replies.
 
 ## Run log (short)
+- **2026-10-29 12:42 UTC — QUIET (latest run).** State byte-identical to the 2026-10-29 00:55 run.
+  Open issues #1,#2,#3,#4,#5,#7,#8,#10,#11,#13 — no #14+. PRs only #6,#9,#12, all open drafts,
+  updated_at frozen at my own comments (#12 2026-10-28T12:49:49, #9 2026-10-14T12:53:13,
+  #6 2026-09-30T13:02:39). #13 upd 2026-10-28T12:49:48 = mine. #7 upd 2026-10-28T12:49:50 = my
+  own rewrite, still 0 comments / 0 ticked checkboxes. Only #5 ([aw] Detection Runs) moves each
+  run (machine noise, do not touch). 14 labels; AI-thinks-* absent => Tasks 2-3 zero input.
+  noop; #7 NOT updated per Task FINAL rule 5; cursors c/woc/rtc=0, lr=2026-10-29.
 
-- **2026-10-29 00:55 UTC — QUIET. No new issues, no new PRs, no human comments anywhere.**
-  Issue list identical to the 2026-10-28 12:41 run: #1,#2,#3,#4,#5,#7,#8,#10,#11,#13 open; no #14+.
-  PRs still only #6,#9,#12 — all three open drafts, updated_at frozen (#12 2026-10-28T12:49:49 =
-  my own comment). #13 updated_at 2026-10-28T12:49:48 = my own comment. #7 updated_at
-  2026-10-28T12:49:50 = my own rewrite, still **0 comments** and 0 ticked checkboxes.
-  Only #5 ([aw] Detection Runs) ticked -> 2026-10-29T00:50:32 (machine noise, do not touch).
-  14 labels, AI-thinks-issue-fixed / AI-thinks-windows-only still absent => Tasks 2 and 3 have
-  zero input. Task 1 has no pre-2024 issues (oldest is 2026-08-29). noop; #7 NOT updated per
-  Task FINAL rule 5; cursors c/woc/rtc stay 0, lr -> 2026-10-29.
-
-- **2026-10-02 .. 2026-10-27 (45+ runs, twice daily): all no-op except the four below.**
-  Every run re-lists issues #1-#5,#7,#8,#10,#11 and PRs #6,#9 (both open drafts). Stamps frozen:
-  #4 2026-09-29, #8 2026-10-14 12:53, #10 2026-10-20 01:12, #11/#7 2026-10-21 12:57,
-  PR #6 2026-09-30, PR #9 2026-10-14. 14 labels; AI-thinks-* absent => Tasks 2-3 no input;
-  Task 1 has no pre-2024 issues. Only #5 ([aw] Detection Runs) ticks each run - machine noise,
-  do not touch. ZERO human comments anywhere, ever.
-  Latest: 2026-10-28 12:41 UTC — NOT quiet: NEW issue #13 + NEW PR #12 (msbuild-quality, 2026-10-28
-  05:06). Commented on both, rewrote #7. Quiet-streak broken at 8. 14 labels, AI-thinks-* absent.
-  Prior: 2026-10-28 00:55 UTC (8th consecutive quiet run; issue/PR updated_at stamps byte-identical
-  to the 2026-10-27 12:54 run except #5 -> 2026-10-28 00:51. No issue #9/#12+; PRs still only #6/#9,
-  both open drafts. #7 upd 2026-10-21, still 0 comments / 0 ticked checkboxes; 14 labels,
-  AI-thinks-* still absent. noop; #7 NOT updated per Task FINAL rule 5; cursors c/woc/rtc=0,
-  lr -> 2026-10-28.)
-  Prior: 2026-10-27 12:54 UTC (7th consecutive quiet run; issue/PR updated_at stamps byte-identical
-  to the 2026-10-27 01:11 run except #5 -> 2026-10-27 12:46. #7 still 0 comments / 0 ticked
-  checkboxes; 14 labels, AI-thinks-* still absent; PRs still only #6/#9, both open drafts.
-  noop; #7 NOT updated per Task FINAL rule 5; cursors c/woc/rtc=0, lr -> 2026-10-27.)
-- 2026-10-14 12:49: new issue #8 + PR #9 (msbuild-quality) - duplicates of #4/#6. Commented on
-  both; first update to summary #7.
-- 2026-10-20 01:08: NEW HUMAN ISSUE #10 (mab2500). Verified + commented; updated #7.
-  Needs-Triage label added (14 total).
-- 2026-10-21 12:51: NEW ISSUE #11 (msbuild-quality). Verified all 3 findings, added 2 of my own
-  + 1 correction. Commented; rewrote summary #7. Notable: #11 explicitly excluded findings
-  already tracked in #4/#8, so msbuild-quality dedup may have improved since the #8/#9 incident.
+- **2026-10-02 .. 2026-10-29 (50+ runs, twice daily): all noop except the four below.**
+  ZERO human comments anywhere, ever. Every run re-lists the same issues/PRs with frozen stamps;
+  only #5 ticks. 14 labels, AI-thinks-* always absent; no pre-2024 issues (oldest 2026-08-29).
+  - 2026-10-14 12:49: new issue #8 + PR #9 (msbuild-quality) — duplicates of #4/#6. Commented on
+    both; first update to summary #7.
+  - 2026-10-20 01:08: NEW HUMAN ISSUE #10 (mab2500). Verified + commented; updated #7.
+    Needs-Triage label added (14 total).
+  - 2026-10-21 12:51: NEW ISSUE #11 (msbuild-quality). Verified all 3 findings, added 2 of my own
+    + 1 correction. Commented; rewrote #7. #11 deduped correctly vs #4/#8.
+  - 2026-10-28 12:41: NEW issue #13 + NEW PR #12 (msbuild-quality). Commented on both, rewrote #7.
 
 ## Standing conclusion
 Absent new issues/PRs or a scope change, future runs should expect to call `noop`.
