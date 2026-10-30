@@ -1,11 +1,11 @@
 {
-  "last_run_utc": "2026-10-29T20:57Z",
+  "last_run_utc": "2026-10-30T12:57Z",
   "processed_prs": [],
   "notes": "No open PRs with label AI-Issue-Regression-PR in dotnet/fsharp or fsprojects/fsharp-automation.",
   "last_run": {
-    "timestamp": "2026-10-30T08:58Z",
-    "run_id": "41029790919",
+    "timestamp": "2026-10-30T12:57Z",
+    "run_id": "41059147814",
     "open_prs": 0,
-    "note": "GitHub MCP trapped; public API fallback used"
+    "note": "GitHub MCP healthy"
   }
 }
