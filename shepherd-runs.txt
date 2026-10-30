@@ -5,3 +5,4 @@
 2026-10-29 run 40877432833 — no open AI-Issue-Regression-PR PRs in dotnet/fsharp or fsprojects/fsharp-automation (MCP healthy)
 2026-10-29T20:57Z run=40953394803 MCP healthy. 0 open AI-Issue-Regression-PR PRs in dotnet/fsharp and fsprojects/fsharp-automation. No action needed.
 2026-10-30 run=40983312362 prs=0 note=MCP-trapped-used-public-API
+2026-10-30T08:58Z run=41029790919 prs=0 note=MCP-trapped-used-public-API-fallback
