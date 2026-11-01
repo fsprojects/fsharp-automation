@@ -15,3 +15,4 @@ processed-prs.* / shepherd-*.{txt,json} — they duplicated state.json and blew 
 ## Run log (append one line per run; keep last ~15)
 - 2026-10-31 run 41241197723 — 0 eligible PRs, noop.
 - 2026-11-01 run 41259051199 — 0 eligible PRs, noop.
+- 2026-11-01 run 41274974304 — 0 eligible PRs, noop; purged duplicate memory files again.
