@@ -103,43 +103,25 @@ only proves the happy path. Commented on both #13 and PR #12; rewrote summary #7
 Only re-engage if a human replies.
 
 ## Run log (short)
-- **2026-10-31 12:36 UTC — QUIET (latest run).** State byte-identical to 2026-10-31 00:46.
-  Issues 1,2,3,4,5,7,8,10,11,13 (no #14+); PRs still only 6,9,12 (open drafts; updated_at frozen
-  at 2026-09-30T13:02:39 / 2026-10-14T12:53:13 / 2026-10-28T12:49:49 = all mine). #7 upd
-  2026-10-28T12:49:50 = mine, 0 comments / 0 ticked boxes. Only #5 moved (2026-10-31T12:26:47).
-  14 labels re-listed, AI-thinks-* still absent => Tasks 1-3 zero input (also oldest issue
-  2026-08-29, past the 2024 cutoff). noop; #7 NOT updated per Task FINAL rule 5;
-  c/woc/rtc=0, lr=2026-10-31.
-  REMINDER: next run is almost certainly 2026-11 -> CREATE `[Repo Assist] Monthly Activity 2026-11`
-  and set `ms` to it, but ONLY if that run has activity to report. Leave #7 open for the maintainer.
+- **2026-11-01 00:54 UTC — QUIET (latest run). FIRST RUN OF 2026-11.** State byte-identical to the
+  2026-10-29..10-31 runs: issues 1,2,3,4,5,7,8,10,11,13 (no #14+); PRs still only 6,9,12 (open
+  drafts, updated_at frozen at 2026-09-30T13:02:39 / 2026-10-14T12:53:13 / 2026-10-28T12:49:49 =
+  all mine). #7 upd 2026-10-28T12:49:50 = mine, 0 comments / 0 ticked boxes. Only #5 ticks
+  (2026-11-01T00:49:48). 14 labels, AI-thinks-* still absent => Tasks 1-3 zero input (oldest issue
+  2026-08-29, past the 2024 cutoff). noop.
+  Did **NOT** create `[Repo Assist] Monthly Activity 2026-11`: Task FINAL rule 5 forbids a summary
+  update when the run did nothing. `ms` stays 7 until a 2026-11 run has real activity; at that point
+  CREATE the 2026-11 issue and set `ms` to it. Leave #7 open for the maintainer to close.
+  c/woc/rtc=0, lr=2026-11-01.
 
-- **2026-10-31 00:46 UTC — QUIET.** State byte-identical to 2026-10-30 12:42.
-  Issues 1,2,3,4,5,7,8,10,11,13 (no #14+); PRs still only 6,9,12 (open drafts, no new comments —
-  checked PR #12 comments directly: only my own 2026-10-28). #7 has **0 comments / 0 ticked boxes**,
-  updated_at 2026-10-28T12:49:50 = mine. #10 still only my comment. 14 labels, AI-thinks-* absent.
-  Only #5 moved (2026-10-31T00:42:15). noop; #7 NOT updated; c/woc/rtc=0, lr=2026-10-31.
-  NOTE: next run is likely 2026-11 -> must CREATE `[Repo Assist] Monthly Activity 2026-11` and
-  set `ms` to it (only if there is activity to report); leave #7 open for the maintainer to close.
-
-- **2026-10-30 12:42 UTC — QUIET.** State byte-identical to the 2026-10-30 00:56 run.
-  Issues #1,#2,#3,#4,#5,#7,#8,#10,#11,#13 — no #14+. PRs still only #6,#9,#12, open drafts,
-  updated_at frozen at my own comments. #7 upd 2026-10-28T12:49:50 = mine, 0 comments /
-  0 ticked boxes. Only #5 moved (2026-10-30T12:34:38, machine noise). 14 labels, AI-thinks-*
-  still absent => Tasks 2-3 zero input; oldest issue 2026-08-29 => Task 1 zero input.
-  noop; #7 NOT updated per Task FINAL rule 5; cursors c/woc/rtc=0, lr=2026-10-30.
-
-- **2026-10-29 00:55 / 12:42 and 2026-10-30 00:56 UTC — QUIET.** Byte-identical state each time;
-  only #5 ticks. See the entry above for the full inventory.
-
-- **2026-10-02 .. 2026-10-29 (50+ runs, twice daily): all noop except the four below.**
+- **2026-10-02 .. 2026-10-31 (60+ runs, twice daily): all noop except the four below.**
   ZERO human comments anywhere, ever. Every run re-lists the same issues/PRs with frozen stamps;
-  only #5 ticks. 14 labels, AI-thinks-* always absent; no pre-2024 issues (oldest 2026-08-29).
+  only #5 ticks. 14 labels, AI-thinks-* always absent; no pre-2024 issues.
   - 2026-10-14 12:49: new issue #8 + PR #9 (msbuild-quality) — duplicates of #4/#6. Commented on
     both; first update to summary #7.
   - 2026-10-20 01:08: NEW HUMAN ISSUE #10 (mab2500). Verified + commented; updated #7.
-    Needs-Triage label added (14 total).
   - 2026-10-21 12:51: NEW ISSUE #11 (msbuild-quality). Verified all 3 findings, added 2 of my own
-    + 1 correction. Commented; rewrote #7. #11 deduped correctly vs #4/#8.
+    + 1 correction. Commented; rewrote #7.
   - 2026-10-28 12:41: NEW issue #13 + NEW PR #12 (msbuild-quality). Commented on both, rewrote #7.
 
 ## Standing conclusion
