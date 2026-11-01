@@ -1,39 +1,39 @@
 {
-"last_run_id": "41274974304",
-"last_run_utc": "2026-11-01T04:57Z",
-"open_prs": [],
-"processed_prs": [
-{
-"repo": "dotnet/fsharp",
-"number": 20671,
-"category": "Merged",
-"note": "Merged by T-Gro 2026-10-05",
-"head_sha": "e11f43fc0aaa4d44d7a14bbeddfeca3a1a48e51f"
-},
-{
-"repo": "dotnet/fsharp",
-"number": 20648,
-"category": "Merged",
-"note": "Merged by T-Gro 2026-10-05",
-"head_sha": "1964aed8f372dec4239a4317a2d2730581bf7ec5"
-},
-{
-"repo": "dotnet/fsharp",
-"number": 20706,
-"issue": 6036,
-"category": "Merged",
-"note": "MERGED by T-Gro 2026-10-09T07:34:52Z (sha 5870e60). Included forward-fix to src/Compiler/Service/TransparentCompiler.fs. Issue #6036 resolved. No further action.",
-"head_sha": "5870e60c5512025affb8191503ff9d0f71343bd6",
-"last_addressed_comment_utc": "2026-10-08T05:00:00Z"
-},
-{
-"repo": "dotnet/fsharp",
-"number": 20816,
-"issue": 12708,
-"category": "Merged",
-"note": "MERGED by T-Gro 2026-10-21T16:23:05Z. No further action.",
-"head_sha": "cd144bc9ffde0d113b28e1383c411650441816bc"
-}
-],
-"notes": "No open AI-Issue-Regression-PR PRs. All tracked PRs merged. Canonical memory files: notes.md, state.json only."
+ "last_run_id": "41290923933",
+ "last_run_utc": "2026-11-01T08:57Z",
+ "open_prs": [],
+ "processed_prs": [
+  {
+   "repo": "dotnet/fsharp",
+   "number": 20671,
+   "category": "Merged",
+   "note": "Merged by T-Gro 2026-10-05",
+   "head_sha": "e11f43fc0aaa4d44d7a14bbeddfeca3a1a48e51f"
+  },
+  {
+   "repo": "dotnet/fsharp",
+   "number": 20648,
+   "category": "Merged",
+   "note": "Merged by T-Gro 2026-10-05",
+   "head_sha": "1964aed8f372dec4239a4317a2d2730581bf7ec5"
+  },
+  {
+   "repo": "dotnet/fsharp",
+   "number": 20706,
+   "issue": 6036,
+   "category": "Merged",
+   "note": "MERGED by T-Gro 2026-10-09T07:34:52Z (sha 5870e60). Included forward-fix to src/Compiler/Service/TransparentCompiler.fs. Issue #6036 resolved. No further action.",
+   "head_sha": "5870e60c5512025affb8191503ff9d0f71343bd6",
+   "last_addressed_comment_utc": "2026-10-08T05:00:00Z"
+  },
+  {
+   "repo": "dotnet/fsharp",
+   "number": 20816,
+   "issue": 12708,
+   "category": "Merged",
+   "note": "MERGED by T-Gro 2026-10-21T16:23:05Z. No further action.",
+   "head_sha": "cd144bc9ffde0d113b28e1383c411650441816bc"
+  }
+ ],
+ "notes": "No open AI-Issue-Regression-PR PRs. All tracked PRs merged. Canonical memory files: notes.md, state.json only."
 }
